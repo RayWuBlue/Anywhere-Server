@@ -1,0 +1,25 @@
+<?php
+return array (
+  0 => 'ttedu_id',
+  1 => 'ttedu_code',
+  2 => 'ttedu_lianxiren',
+  3 => 'ttedu_tel',
+  4 => 'ttedu_mob',
+  5 => 'ttedu_weizhi',
+  6 => 'ttedu_diqumiaoshu',
+  7 => 'ttedu_sex',
+  8 => 'ttedu_old',
+  9 => 'ttedu_xueke',
+  10 => 'ttedu_shangkeshijian',
+  11 => 'ttedu_xueyuanmiaoshu',
+  12 => 'ttedu_jiaoshiyaoqiu',
+  13 => 'ttedu_shoufeiyaoqiu',
+  14 => 'ttedu_teach_id',
+  15 => 'ttedu_stuid',
+  16 => 'ttedu_beizhu',
+  17 => 'ttedu_adddate',
+  18 => 'ttedu_shifouchuli',
+  '_autoinc' => true,
+  '_pk' => 'ttedu_id',
+);
+?>
