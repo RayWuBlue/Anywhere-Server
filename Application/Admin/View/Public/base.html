@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>{$website_title}</title>
+    <meta name="keywords" content="{$keywords}" />
+    <link rel="stylesheet" type="text/css" href="__CSS__/base.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/common.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/index.css">
+    <block name="style"></block>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="main">
+		<div class="header">
+			<h1>WPA({$Think.now|strtotime|date='Y-m-d',###})</h1>
+			<a class="logout" href="__APP__/auth/logout">注销</a>
+		</div>
+		<!--导航菜单-->
+
+		<ul id="side" class="side">
+			<volist name="menu" id="item">
+				<li <if condition="$item.action_name eq CONTROLLER_NAME">class="curr"</if>>
+					<a href="{$item.link}">{$item.title}</a>
+				</li>
+			</volist>
+		</ul>
+		<!--导航菜单结束-->
+	</div>
+	<!-- /头部 -->
+	<!-- 主体 -->
+	<block name="body"></block>
+	<!-- /主体 -->
+
+	<!-- 底部 -->
+	<script src="__JS__/jquery.js"></script>
+    <script src="__JS__/utils.js"></script>
+
+    <block name="js"></block>
+	<!-- /底部 -->
+</body>
+</html>
+

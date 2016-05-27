@@ -1,0 +1,51 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="content">
+    <div class="panel">
+      <div class="panel-head">
+        <h4>会员管理</h4>
+      </div>
+      <div class="panel-content">
+        <form id="form1" name="form1" method="post" action="admin_news.asp?del=checkbox">
+          <table class="table table-border">
+            <tr>
+              <td width="4%" >ID</td>
+              <td width="11%">姓名</td>
+              <td width="8%" >性别</td>
+              <td width="8%" >年龄</td>
+              <td width="22%" >注册时间</td>
+              <td width="22%" >最后登录时间</td>
+              <td width="13%" >联系电话</td>
+              <td width="12%" >操作</td>
+            </tr>
+            <volist name="huiyuan_info" id="vo">
+              <tr>
+                <td >{$vo.ttedu_id}</td>
+                <td >{$vo.ttedu_username}</td>
+                <td >{$vo.ttedu_sex}</td>
+                <td >{$vo.ttedu_old}</td>
+                <td >{$vo.ttedu_adddate|date='Y-m-d H:i:s',###}</td>
+                <td >{$vo.ttedu_logindate|date='Y-m-d H:i:s',###}</td>
+                <td >{$vo.ttedu_shouji}</td>
+                <td >
+                  <input type="button" name="Submit3" value="修改"
+          onclick="window.location.href='__APP__/HuiyuanInfo/update_member_stu/ttedu_id/'+{$vo.ttedu_id} "/>
+                </td>
+              </tr>
+            </volist>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+</block>
+<block name="js">
+  <script language="javascript">
+    function CheckAll(){ 
+     for (var i=0;i<eval(form1.elements.length);i++){ 
+      var e=form1.elements[i]; 
+      if (e.name!="allbox") e.checked=form1.allbox.checked; 
+     } 
+    }
+  </script></block>

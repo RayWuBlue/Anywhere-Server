@@ -1,0 +1,75 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="content">
+        <div class="row"><a href="__URL__/add/day/{$currFullDay}">添加推荐</a></div>
+        <div class="row">
+            <ul class="list_inline list_inline-border">
+                <volist name="days" id="day">
+                <li <if condition="($currDay eq $day)">class="curr"</if>><a href="__URL__/index/day/{$day}">{$day}</a></li>
+                </volist>
+            </ul>
+        </div>
+        <div class="row">
+            <table class="table table-border">
+                <thead>
+                    <tr>
+                        <th class="pic_pic">图片</th>
+                        <th class="pic_width">宽</th>
+                        <th class="pic_height">高</th>
+                        <th class="pic_title">ID/标题</th>
+                        <th class="pic_addtime">添加时间</th>
+                        <th class="pic_opt">操作</th>
+                    </tr>
+                </thead>
+                <volist name="list" id="item">
+                    <tr>
+                        <td><a href="__ROOT__/uploads/{$item.name}" target="_blank" ><img class="thumbimg" src="__ROOT__/Uploads/{$item.name|getthumb}" alt="{$item.title}"></a></td>
+                        <td>{$item.width}px</td>
+                        <td>{$item.height}px</td>
+                        <td title="{$item.summary}">
+                            <ul class="list_opt">
+                                <li>{$item.wid}</li>
+                                <li>{$item.title}</li>
+                            </ul>
+                        </td>
+                        <td>{$item.addtime|strtotime|date='Y-m-d',###}</td>
+                        <td>
+                            <ul class="list_opt">
+                                <li><a href="javascript:void(0);" onclick="del('{$item.id}');">删除</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </volist>
+            </table>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        function del(id) {
+            if (confirm('确认删除？')) {
+                $.ajax({
+                    url: '__URL__/del',
+                    data: {
+                        id: id
+                    },
+                    type: 'post'
+                }).done(function(ret) {
+                    if (ret == 0) {
+                        alert('请先登录!');
+                    } else if (ret == 1) {
+                        window.location.reload();
+                    } else if (ret == 2) {
+                        alert('参数有误！');
+                    } else {
+                        alert('出错啦！请联系管理员！');
+                    }
+                })
+                .fail(function(msg) {
+                    alert(msg);
+                })
+            }
+        }
+    </script>
+</block>

@@ -1,0 +1,91 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="content">
+        <div class="panel">
+            <div class="panel-head">
+                <h4>新闻列表</h4>
+            </div>
+            <div class="panel-control">
+                <form id="cateform" action="__URL__/index" method="post">
+                    按分类查看：
+                    <select id="cateid" name="cateid" style="width: 300px;height: 30px;">
+                        <volist name="cates" id="cate">
+                            <if condition="($cateid eq $cate['id'])">
+                                <option selected="selected" value="{$cate.id}">{$cate.name}</option>
+                                <else />
+                                <option value="{$cate.id}">{$cate.name}</option>
+                            </if>
+                        </volist>
+                    </select>
+                </form>
+                <a href="__URL__/add" class="button float-right">添加分类</a>
+                <a href="__URL__/add" class="button float-right">删除当前分类</a>
+                <a href="__URL__/add" class="button float-right">添加新闻</a>
+                <div class="float-clear"></div>
+            </div>
+            <div class="panel-content">
+                <table class="table table-border" style="text-align: center;">
+                    <thead>
+                        <th width="5%">
+                            <input type="checkbox" id="chk_del_all">
+                        </th>
+                        <th width="5%">ID</th>
+                        <th width="40%">标题</th>
+                        <th width="20%">添加时间</th>
+                        <th width="10%">操作</th>
+                    </thead>
+                    <volist name="list" id="item">
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>{$item.id}</td>
+                            <td>{$item.title}</td>
+                            <td>{$item.addtime|strtotime|date='Y-m-d',###}</td>
+                            <td>
+                                <span><a href="__APP__/reco/add/wid/{$item.id}">编辑</a></span>
+                                <span>
+                                <a href="javascript:void(0);" onclick="del('{$item.id}');">删除</a>
+                                </span>
+                            </td>
+                        </tr>
+                    </volist>
+                </table>
+                <div class="page_wrap">{$page}</div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script type="text/javascript">
+    $(function() {
+        $('#cateid').change(function(e) {
+            $('#cateform').submit();
+        });
+    });
+
+    function del(id) {
+        if (confirm('确认删除？')) {
+            $.ajax({
+                url: '__URL__/del',
+                data: {
+                    id: id
+                },
+                type: 'post'
+            }).done(function(ret) {
+                if (ret == 0) {
+                    alert('请先登录!');
+                } else if (ret == 1) {
+                    window.location.reload();
+                } else if (ret == 2) {
+                    alert('参数有误！');
+                } else {
+                    alert('出错啦！请联系管理员！');
+                }
+            })
+            .fail(function(msg) {
+                alert(msg);
+            })
+        }
+    }
+</script>
+</block>

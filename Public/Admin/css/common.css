@@ -1,0 +1,30 @@
+.main{
+    position: relative;
+    height: 100%;
+}
+.list_inline{
+}
+.list_inline li{
+    width: 10%;
+    background-color: #eee;
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+}
+.list_inline-border{
+    border: 1px solid #ccc;
+    border-right:none;
+    border-bottom: none;
+}
+.list_inline-border li{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.list_inline li.curr{
+    background-color: #fff;
+}
+
+.list_inline-border li.curr{
+    border-bottom: none;
+}
+

@@ -1,0 +1,77 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="content">
+
+        <div class="panel">
+            <div class="panel-head">
+                <h4>添加新闻</h4>
+            </div>
+            <div class="panel-content">
+                <table class="table table-border">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <tr>
+                            <td>
+                                <span>新闻分类：</span>
+                            </td>
+                            <td>
+                                <select name="cateid" style="width: 800px">
+                                    <volist name="cates" id="cate">
+                                        <option value="{$cate.id}">{$cate.name}</option>
+                                    </volist>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>新闻标题：</span>
+                            </td>
+                            <td>
+                                <input type="text" name="title" style="width: 800px"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>新闻摘要：</span>
+                            </td>
+                            <td>
+                                <textarea name="summary" rows="3" style="width: 800px" ></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>缩略图：</span>
+                            </td>
+                            <td>
+                                <input type="file" name="image"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>新闻内容：</span>
+                            </td>
+                            <td>
+                                <textarea id="editor_id" rows="20" name="content" style="width: 800px"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="完成"/>
+                            </td>
+                        </tr>
+                    </div>
+                </form>
+            </table>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script charset="utf-8" src="__EDITOR__/kindeditor.js"></script>
+    <script charset="utf-8" src="__EDITOR__/lang/zh-CN.js"></script>
+    <script>
+            KindEditor.ready(function(K) {
+                    window.editor = K.create('#editor_id');
+            });
+    </script>
+</block>

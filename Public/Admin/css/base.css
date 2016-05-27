@@ -1,0 +1,96 @@
+html,body,ul,li,p,h1{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family: "Open Sans",Arial,Helvetica,Sans-Serif;
+    line-height: 1.428571429;
+    z-index: 0;
+}
+ul,li{
+    list-style: none;
+}
+a {
+  color: #3276b1;
+  text-decoration: none;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.text-right{
+  text-align: right;
+}
+.float-right{
+  float: right;
+}
+.float-left{
+  float: left;
+}
+.float-clear{
+  clear: both;
+}
+
+.f-fb{
+  font-weight: 700;
+}
+.f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.f-cb,.f-cbli li{zoom:1;}
+.form-item{
+  margin: 10px 0;
+  font-size: 16px;
+}
+.form-item input,
+.form-item select,
+.form-item button{
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.form-item input[type=file] {
+  margin-left: -10px;
+}
+.form-item input[type=date] {
+  padding: 2px 10px;
+}
+.form-item textarea{
+  width: 300px;
+  height: 150px;
+  line-height: 25px;
+  padding: 5px;
+}
+.form-item .item-title{
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  vertical-align: top;
+}
+.logout,
+.myaccount,
+.multiads{
+  display: inline-block;
+  float: right;
+  height: 40px;
+  margin: 10px;
+  line-height: 30px;
+  padding: 5px 20px;
+  box-sizing:border-box;
+  padding-right: 40px;
+}
+.myaccount{
+  background: none;
+  padding: 5px;
+}
+.multiads{
+  background:none;
+  padding: 5px;
+}
+.logout:hover{
+  background-color: #ddd;
+}
+
+.row{
+  margin-top: 10px;
+}
