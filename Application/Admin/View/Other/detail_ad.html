@@ -1,0 +1,78 @@
+<extend name="Public/base"/>
+
+<block name="body">
+	<div class="content">
+		<div class="panel">
+			<div class="panel-head">
+				<h4>
+					添加广告
+					<span onclick="javascript:history.back()">X</span>
+				</h4>
+			</div>
+			<div class="panel-content">
+				<form action="__APP__/Admin/index/update_ad" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="id" value="{$ad.id}" />
+					<table class="table table-border">
+						<tr>
+							<td colspan="2">
+								<img src="Public/Uploads/{$ad.ad_pic}" width="100%" height="200" />
+							</td>
+						</tr>
+						<tr>
+							<td width="27%">广告名称：</td>
+							<td width="73%">
+								<input type="text" name="ad_title"  size="20" value="{$ad.ad_title}" />
+							</td>
+						</tr>
+						<tr>
+							<td>链接地址：</td>
+							<td>
+								<input type="text" name="ad_link"  size="20"  value="{$ad.ad_link}" />
+							</td>
+						</tr>
+						<tr>
+							<td>上传图片：</td>
+							<td>
+								<input name="image" id="image" type="file" class="file huge" />
+								&nbsp;上传允许文件类型：gif png jpg 图像文件
+							</td>
+						</tr>
+						<tr>
+							<td>广告位置：</td>
+							<td>
+								<input type="text" name="text"  size="20"  value="{$ad.text}" />
+							</td>
+						</tr>
+						<tr>
+							<td>图片宽度：</td>
+							<td>
+								<input type="text" name="ad_height"  size="5"  value="{$ad.ad_height}" />
+							</td>
+						</tr>
+						<tr>
+							<td>图片高度：</td>
+							<td>
+								<input type="text" name="ad_width"  size="5"  value="{$ad.ad_width}" />
+							</td>
+						</tr>
+						<tr>
+							<td>是否显示：</td>
+							<td>
+								<input type="radio" name="is_show" value="1" <eq name="ad.is_show" value="1">checked</eq>
+							/>不显示&nbsp;&nbsp;
+							<input type="radio" name="is_show" value="0" <eq name="ad.is_show" value="0">checked</eq>
+						/>显示
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="提交" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>
+</div>
+</block>

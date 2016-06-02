@@ -1,6 +1,114 @@
 <extend name="Public/base"/>
-
+<block name="style">
+    <style type="text/css">
+     #dialog-backgound{
+      background-color: #4E4E4E;
+      position: absolute;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      display: none;
+      width: 100%;
+      height: 1000px;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+      -moz-opacity: 0.5;
+     }
+     #dialog-window
+     {
+      position: absolute;
+      width: 400px;
+      left: 50%;
+      top: 50%;
+      margin-left: -200px;
+      height: auto;
+      z-index: 1000;
+      background-color: #fff;
+     }
+     #dialog-close-button
+     {
+      width: 20px;
+      height: 20px;
+      display: block;
+      font-size: 12px;
+      color: white;
+      padding: 2px;
+      text-align: center;
+      background: #8B8B8B;
+      border-radius: 20px;
+      cursor: pointer;
+     }
+     #dialog-close-button:hover{
+        background: #6F6F6F;
+     }
+     #dialog-window .form
+     {
+      padding: 10px;
+     }
+     .dialog-centent{
+        padding: 10px;
+     }
+ </style>
+</block>
 <block name="body">
+
+ <div class="dialog" id="dialog-add-cate">
+     <div id="dialog-backgound"></div>
+     <div id="dialog-window" class="panel" style="display: none">
+         <div class="panel-head">
+             <h4>
+                 添加分类
+                 <a id="dialog-close-button" class="float-right">X</a>
+             </h4>
+         </div>
+         <div class="dialog-centent">
+             <form method="post" action="__URL__/add_cate">
+                 <span>分类名：</span><input type="text" name="name">&nbsp;&nbsp;
+                 <input type="submit" value="确定">
+             </form>
+         </div>
+     </div>
+ </div>
+
+ <div class="dialog" id="dialog-rename-cate">
+     <div id="dialog-backgound"></div>
+     <div id="dialog-window" class="panel" style="display: none">
+         <div class="panel-head">
+             <h4>
+                 重命名分类
+                 <a id="dialog-close-button" class="float-right">X</a>
+             </h4>
+         </div>
+         <div class="dialog-centent">
+             <form method="post" action="__URL__/edit_cate">
+                 <span>分类名：</span>
+                 <input type="hidden" name="id" value="{$cateid}">
+                 <input type="text" name="name" value="{$catename}">&nbsp;&nbsp;
+                 <input type="submit" value="确定">
+             </form>
+         </div>
+     </div>
+ </div>
+
+ <div class="dialog" id="dialog-del-cate">
+     <div id="dialog-backgound"></div>
+     <div id="dialog-window" class="panel" style="display: none">
+         <div class="panel-head">
+             <h4>
+                 警告
+                 <a id="dialog-close-button" class="float-right">X</a>
+             </h4>
+         </div>
+         <div class="dialog-centent">
+             <form method="post" action="__URL__/del_cate">
+                 <h4>是否删除<font color="red">{$catename}</font>分类？<br/>该分类下的所有新闻将被删除!!</h4>
+                 <input type="hidden" name="id" value="{$cateid}">
+                 <input type="submit" value="确定">
+             </form>
+         </div>
+     </div>
+ </div>
+
     <div class="content">
         <div class="panel">
             <div class="panel-head">
@@ -8,8 +116,8 @@
             </div>
             <div class="panel-control">
                 <form id="cateform" action="__URL__/index" method="post">
-                    按分类查看：
                     <select id="cateid" name="cateid" style="width: 300px;height: 30px;">
+                    
                         <volist name="cates" id="cate">
                             <if condition="($cateid eq $cate['id'])">
                                 <option selected="selected" value="{$cate.id}">{$cate.name}</option>
@@ -19,8 +127,13 @@
                         </volist>
                     </select>
                 </form>
-                <a href="__URL__/add" class="button float-right">添加分类</a>
-                <a href="__URL__/add" class="button float-right">删除当前分类</a>
+                
+                <a class="button float-right dialog-trigger" dialog-id="dialog-add-cate">添加分类
+                </a>
+                <a class="button float-right dialog-trigger" dialog-id="dialog-rename-cate">重命名当前分类
+                </a>
+                <a class="button float-right dialog-trigger" dialog-id="dialog-del-cate">删除当前分类</a>
+                <span class="divider-horizontal float-right"></span>
                 <a href="__URL__/add" class="button float-right">添加新闻</a>
                 <div class="float-clear"></div>
             </div>
@@ -54,6 +167,9 @@
             </div>
         </div>
     </div>
+    <div>
+        
+    </div>
 </block>
 <block name="js">
     <script type="text/javascript">
@@ -62,7 +178,6 @@
             $('#cateform').submit();
         });
     });
-
     function del(id) {
         if (confirm('确认删除？')) {
             $.ajax({
@@ -87,5 +202,26 @@
             })
         }
     }
-</script>
+    $(function() {
+      $(".dialog-trigger").click(function() {
+          var dialog = $("#"+$(this).attr('dialog-id'));
+          var dialog_backgound = dialog.children("#dialog-backgound").first();
+          dialog_backgound.css("height",$(document).height());
+          dialog_backgound.fadeIn();
+          
+          var yscroll = document.documentElement.scrollTop;
+          document.documentElement.scrollTop = 0;
+
+          var dialog_window = dialog.children("#dialog-window").first();
+          dialog_window.css("top", "150px");
+          dialog_window.fadeIn();
+          
+          var dialog_close_button = dialog.find("#dialog-close-button").first();
+          dialog_close_button.click(function() {
+              dialog_backgound.fadeOut();
+              dialog_window.fadeOut();
+          });
+        });
+    });
+    </script>
 </block>

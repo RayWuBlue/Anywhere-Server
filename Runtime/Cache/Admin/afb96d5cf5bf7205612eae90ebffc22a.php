@@ -12,17 +12,13 @@
 <body>
 	<!-- 头部 -->
 	<div class="main">
-		<div class="header">
-			<h1>WPA(<?php echo (date('Y-m-d',strtotime(date('Y-m-d g:i a',time())))); ?>)</h1>
-			<a class="logout" href="/app/admin.php?s=/auth/logout">注销</a>
+		<div class="side-menu">
+			<ul id="side" class="side">
+				<?php if(is_array($menu)): $i = 0; $__LIST__ = $menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li <?php if($item["action_name"] == CONTROLLER_NAME): ?>class="curr"<?php endif; ?>>
+						<a href="<?php echo ($item["link"]); ?>"><?php echo ($item["title"]); ?></a>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
+			</ul>
 		</div>
-		<!--导航菜单-->
-
-		<ul id="side" class="side">
-			<?php if(is_array($menu)): $i = 0; $__LIST__ = $menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li <?php if($item["action_name"] == CONTROLLER_NAME): ?>class="curr"<?php endif; ?>>
-					<a href="<?php echo ($item["link"]); ?>"><?php echo ($item["title"]); ?></a>
-				</li><?php endforeach; endif; else: echo "" ;endif; ?>
-		</ul>
 		<!--导航菜单结束-->
 	</div>
 	<!-- /头部 -->
@@ -31,7 +27,11 @@
   <div class="content">
     <div class="panel">
       <div class="panel-head">
-        <h4>会员管理</h4>
+          <ul class="segment-group">
+              <?php if(is_array($sub_menu)): $i = 0; $__LIST__ = $sub_menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li <?php if($item["action_name"] == ACTION_NAME): ?>class="curr"<?php endif; ?>>
+                      <a href="<?php echo ($item["link"]); ?>"><?php echo ($item["title"]); ?></a>
+                  </li><?php endforeach; endif; else: echo "" ;endif; ?>
+          </ul>
       </div>
       <div class="panel-content">
         <form id="form1" name="form1" method="post" action="admin_news.asp?del=checkbox">
@@ -46,17 +46,17 @@
               <td width="13%" >联系电话</td>
               <td width="12%" >操作</td>
             </tr>
-            <?php if(is_array($huiyuan_info)): $i = 0; $__LIST__ = $huiyuan_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                <td ><?php echo ($vo["ttedu_id"]); ?></td>
-                <td ><?php echo ($vo["ttedu_username"]); ?></td>
-                <td ><?php echo ($vo["ttedu_sex"]); ?></td>
-                <td ><?php echo ($vo["ttedu_old"]); ?></td>
-                <td ><?php echo (date('Y-m-d H:i:s',$vo["ttedu_adddate"])); ?></td>
-                <td ><?php echo (date('Y-m-d H:i:s',$vo["ttedu_logindate"])); ?></td>
-                <td ><?php echo ($vo["ttedu_shouji"]); ?></td>
+            <?php if(is_array($member_admin)): $i = 0; $__LIST__ = $member_admin;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                <td ><?php echo ($vo["id"]); ?></td>
+                <td ><?php echo ($vo["username"]); ?></td>
+                <td ><?php echo ($vo["sex"]); ?></td>
+                <td ><?php echo ($vo["old"]); ?></td>
+                <td ><?php echo (date('Y-m-d H:i:s',$vo["add_date"])); ?></td>
+                <td ><?php echo (date('Y-m-d H:i:s',$vo["login_date"])); ?></td>
+                <td ><?php echo ($vo["mobilephone"]); ?></td>
                 <td >
                   <input type="button" name="Submit3" value="修改"
-          onclick="window.location.href='/app/admin.php?s=/HuiyuanInfo/update_member_stu/ttedu_id/'+<?php echo ($vo["ttedu_id"]); ?> "/>
+          onclick="window.location.href='/app/admin.php?s=/HuiyuanInfo/update_member_user/id/'+<?php echo ($vo["id"]); ?> "/>
                 </td>
               </tr><?php endforeach; endif; else: echo "" ;endif; ?>
           </table>
@@ -66,7 +66,6 @@
   </div>
 
 	<!-- /主体 -->
-
 	<!-- 底部 -->
 	<script src="/app/Public/Admin/js/jquery.js"></script>
     <script src="/app/Public/Admin/js/utils.js"></script>

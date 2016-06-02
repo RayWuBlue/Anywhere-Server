@@ -6,8 +6,9 @@ html,body{
     height: 100%;
 }
 body{
-    font-family: "Open Sans",Arial,Helvetica,Sans-Serif;
+    font-family: "微软雅黑","黑体";
     line-height: 1.428571429;
+    background: #e2e2e2;
     z-index: 0;
 }
 ul,li{

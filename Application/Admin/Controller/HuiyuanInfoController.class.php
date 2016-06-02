@@ -4,16 +4,66 @@ namespace Admin\Controller;
 class HuiyuanInfoController extends AdminController
 {
 
-	public function admin_member_stu()
+	public function admin_manager(){
+	      $model =D('member_user');//实例化模型类
+		  $count = $model->count();    //计算总数 
+		  $p = new \Think\Page ($count, 15 );
+		  
+		  $member_users=$model->limit($p->firstRow.','.$p->listRows)->order('id asc')->select(); //查询
+		  $this->assign('member_users',$member_users);//根据模板变量赋值
+		  
+		  $p->setConfig('header','条信息'); 
+	      $p->setConfig('prev',"<"); 
+	      $p->setConfig('next','>'); 
+	      $p->setConfig('first','<<'); 
+	      $p->setConfig('last','>>'); 
+	      $page = $p->show ();
+		  $this->assign( "page", $page ); 
+			 
+		  $this->display();
+	}
+
+	public function admin_manager_insert(){
+	      $model =D('member_user');//实例化模型类
+		  if($model->Create()){
+			  $model->add();
+			  $this->redirect('admin_manager');
+		  }else{
+		  	  $err=$model->getError();
+			  echo "<script>alert('".$err."');history.go(-1);</script>";
+		  }
+	}
+
+	public function admin_manager_update(){
+	      $model =D('member_user');//实例化模型类
+		  if($model->Create()){
+			  $model->save();
+			  $this->redirect('admin_manager');
+		  }else{
+		  	  $err=$model->getError();
+			  echo "<script>alert('".$err."');history.go(-1);</script>";
+		  }
+	}	
+
+	public function admin_manager_delete(){
+	      $model =D('member_user');//实例化模型类
+		  $model->Create();
+		  $id=$_REQUEST['id'];
+		  $model->delete($id);
+		  $this->redirect('admin_manager');
+	}
+
+
+	public function admin_member_user()
     {
-      $TheObj = D('huiyuan_info');//实例化模型类
-	  $count = $TheObj->count();    //计算总数 
+      $model = D('member_admin');//实例化模型类
+	  $count = $model->count();    //计算总数 
 	  $p = new \Think\Page($count, 15 );
 	  
-	  $huiyuan_info=$TheObj->limit($p->firstRow.','.$p->listRows)->order('ttedu_id desc')->select(); //查询
+	  $member_admin=$model->limit($p->firstRow.','.$p->listRows)->order('id desc')->select(); //查询
 	  
 	  
-	  $this->assign('huiyuan_info',$huiyuan_info);//根据模板变量赋值
+	  $this->assign('member_admin',$member_admin);//根据模板变量赋值
 	  
 	  $p->setConfig('header','条信息'); 
       $p->setConfig('prev',"<"); 
@@ -28,146 +78,40 @@ class HuiyuanInfoController extends AdminController
 	
 	
 	
-	public function update_member_stu()
+	public function update_member_user()
     {
-      $ttedu_id = $_REQUEST["ttedu_id"];
-      $TheObj = D("huiyuan_info");
-	  $TheObj = $TheObj->where("ttedu_id=".$ttedu_id)->find();
+      $id = $_REQUEST["id"];
+      $model = D("member_admin");
+	  $model = $model->where("id=".$id)->find();
 	  
-	  $this->assign("huiyuan_info",$TheObj);
+	  $this->assign("member_admin",$model);
 	  $this->display();
     }
 	
 
 	public function update()
     {
-      $TheObj = D("huiyuan_info");
-	  if($TheObj->Create()){
-	  	  $TheObj->ttedu_id=$_POST['ttedu_id'];
-		  if(!empty($_POST['ttedu_password'])){
-		  	$TheObj->ttedu_password=stripslashes($_POST['ttedu_password']);
+      $model = D("member_admin");
+	  if($model->Create()){
+	  	  $model->id=$_POST['id'];
+		  if(!empty($_POST['password'])){
+		  	$model->password=stripslashes($_POST['password']);
 		  }
-		  $TheObj->ttedu_sex=stripslashes($_POST['ttedu_sex']);
-		  $TheObj->ttedu_old=stripslashes($_POST['ttedu_old']);
-		  $TheObj->ttedu_birth=stripslashes($_POST['ttedu_birth']);
-		  $TheObj->ttedu_zuoji=stripslashes($_POST['ttedu_zuoji']);
-		  $TheObj->ttedu_qq=stripslashes($_POST['ttedu_qq']);
-		  $TheObj->ttedu_sex=stripslashes($_POST['ttedu_sex']);
-		  $TheObj->ttedu_sex=stripslashes($_POST['ttedu_sex']);
+		  $model->sex=stripslashes($_POST['sex']);
+		  $model->age=stripslashes($_POST['age']);
+		  $model->birthday=stripslashes($_POST['birthday']);
+		  $model->telephone=stripslashes($_POST['telephone']);
+		  $model->qq=stripslashes($_POST['qq']);
+		  $model->sex=stripslashes($_POST['sex']);
+		  $model->sex=stripslashes($_POST['sex']);
 		  
-		  $TheObj->save(); // 保存当前数据对象
-		  $this->redirect('admin_member_stu');
+		  $model->save(); // 保存当前数据对象
+		  $this->redirect('admin_member_user');
 	  }else{
-	  	  $err=$TheObj->getError();
+	  	  $err=$model->getError();
 		  echo "<script>alert('".$err."');history.go(-1);</script>";
 	  }
 	  
     }
-	
-		
-
-
-//-------------教师修改审核------------------
-
-
-public function up_shengheixiugai()
-    {
-      $ttedu_id=$_REQUEST['ttedu_id'];
-	  
-	  $TheObj =M("teach_info");
-	  $map['ttedu_id']=$ttedu_id;
-	  $teach_info=$TheObj->where($map)->find();
-	  $ttedu_yuanlaijieshao=$teach_info['ttedu_yuanlaijieshao'];
-	  
-	  $TheObj->ttedu_id=$ttedu_id;
-	  $TheObj->ttedu_shengheixiugai=0;
-	  $TheObj->ttedu_xiangxijieshao=$ttedu_yuanlaijieshao;
-	  $TheObj->save(); // 保存当前数据对象
-	  $this->redirect('admin_audit_update');
-    }
-
-
-
-public function detail_audit_update()
-    {
-      $ttedu_id = $_REQUEST["ttedu_id"];
-      $TheObj =new  Model("teach_info");
-	  $TheObj = $TheObj->where("ttedu_id=".$ttedu_id)->find();
-	  
-	  $this->assign("teach_info",$TheObj);
-	  $this->display();
-    }	
-
-
-public function admin_audit_update()
-    {
-      $TheObj =new Model('teach_info');//实例化模型类
-	  import("@.ORG.Page"); //导入分页类
-	  $count = $TheObj->where('ttedu_shengheixiugai=1')->count();    //计算总数 
-	  $p = new Page ($count, 15 );
-	  
-	  $teach_info=$TheObj->where('ttedu_shengheixiugai=1')->limit($p->firstRow.','.$p->listRows)->order('ttedu_shifoushengji desc')->findAll(); //查询
-	  
-	  
-	  $this->assign('teach_info',$teach_info);//根据模板变量赋值
-	  
-	  $p->setConfig('header','条信息'); 
-      $p->setConfig('prev',"<"); 
-      $p->setConfig('next','>'); 
-      $p->setConfig('first','<<'); 
-      $p->setConfig('last','>>'); 
-      $page = $p->show ();
-	  $this->assign( "page", $page ); 
-		 
-	  $this->display();
-    }
-
-
-
-	//----------------申请为版主-------------------------
-
-
-	public function admin_audit_regist()
-    {
-      $TheObj =new Model('teach_info');//实例化模型类
-	  import("@.ORG.Page"); //导入分页类
-	  $count = $TheObj->where('ttedu_shengheishifoutongguo=0')->count();    //计算总数 
-	  $p = new Page ($count, 15 );
-	  
-	  $teach_info=$TheObj->where('ttedu_shengheishifoutongguo=0')->limit($p->firstRow.','.$p->listRows)->order('ttedu_shifoushengji desc')->findAll(); //查询
-	  
-	  
-	  $this->assign('teach_info',$teach_info);//根据模板变量赋值
-	  
-	  $p->setConfig('header','条信息'); 
-      $p->setConfig('prev',"<"); 
-      $p->setConfig('next','>'); 
-      $p->setConfig('first','<<'); 
-      $p->setConfig('last','>>'); 
-      $page = $p->show ();
-	  $this->assign( "page", $page ); 
-		 
-	  $this->display();
-    }
-	
-
-	public function up_shengheishifoutongguo()
-    {
-      $TheObj =M("teach_info");
-	  $TheObj->ttedu_id=$_REQUEST['ttedu_id'];
-	  $TheObj->ttedu_shengheishifoutongguo=1;
-	  $TheObj->save(); // 保存当前数据对象
-	  $this->redirect('admin_member_teh');
-    }
-
-	
-
-	public function checkEnv()
-    {
-        load('pointer',THINK_PATH.'/Tpl/Autoindex');//载入探针函数
-        $env_table = check_env();//根据当前函数获取当前环境
-        echo $env_table;
-    }
-
 }
 ?>

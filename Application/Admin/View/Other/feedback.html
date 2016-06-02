@@ -1,0 +1,65 @@
+
+<extend name="Public/base"/>
+
+<block name="body">
+	<div class="content">
+		<div class="panel">
+			<div class="panel-head">
+                <ul class="segment-group">
+                    <volist name="sub_menu" id="item">
+                        <li <if condition="$item.action_name eq ACTION_NAME">class="curr"</if>>
+                            <a href="{$item.link}">{$item.title}</a>
+                        </li>
+                    </volist>
+                </ul>
+			</div>
+			<div class="panel-content">
+				<volist name="feedback" id="vo" key="k">
+					<table class="table table-border">
+						<tr>
+							<td width="12%" height="30" align="right">留言标题：</td>
+							<td width="28%" align="left">{$vo.title}</td>
+							<td width="10%" height="30" align="right">留言时间：</td>
+							<td width="19%" align="left">{$vo.add_date|date='Y-m-d H:i:s',###}</td>
+							<td width="11%" height="30" align="right">留言者：</td>
+							<td width="20%" align="left">{$vo.username}</td>
+						</tr>
+						<tr>
+							<td align="right" height="30">留言内容：</td>
+							<td align="left" colspan="5">{$vo.content}</td>
+						</tr>
+						<tr>
+							<td align="right" height="30">回复内容：</td>
+							<td align="left" colspan="5">
+								<neq name="vo.feedback_reply" value="">
+									{$vo.feedback_reply}  &nbsp;&nbsp;&nbsp;  回复时间：{$vo.reply_date|date='Y-m-d H:i:s',###}
+									<else/>
+									您还没有回复，你可以点击
+									<input type="button"  onclick="liuyan({$k});" value="回复"  class="btn"/>
+								</neq>
+								<script type="text/javascript">
+								  function liuyan(k){
+								  	document.getElementById('div'+k).style.display='block';
+								  }
+								  function submit(k){
+								  	document.getElementById('div'+k).style.display='none';
+									return true;
+								  }
+							  </script>
+								<div id="div{$k}" style="display:none">
+									<form action="__APP__/Admin/index/up_ly" method="post" onsubmit="return submit({$k});">
+										<input type="hidden" name="id" value="{$vo.id}" />
+										<textarea name="feedback_reply" rows="3" cols="30"></textarea>
+										<br />
+										<input type="submit" value="提交" />
+									</form>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</volist>
+				<div>{$page}</div>
+			</div>
+		</div>
+	</div>
+</block>

@@ -5,7 +5,7 @@
 
         <div class="panel">
             <div class="panel-head">
-                <h4>添加新闻</h4>
+                <h4>添加新闻<span onclick="javascript:history.back()">X</span></h4>
             </div>
             <div class="panel-content">
                 <table class="table table-border">
@@ -67,8 +67,8 @@
     </div>
 </block>
 <block name="js">
-    <script charset="utf-8" src="__EDITOR__/kindeditor.js"></script>
-    <script charset="utf-8" src="__EDITOR__/lang/zh-CN.js"></script>
+    <script charset="utf-8" src="__WIDGET_LIB__/editor/kindeditor.js"></script>
+    <script charset="utf-8" src="__WIDGET_LIB__/editor/lang/zh-CN.js"></script>
     <script>
             KindEditor.ready(function(K) {
                     window.editor = K.create('#editor_id');

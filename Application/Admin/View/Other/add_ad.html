@@ -1,0 +1,72 @@
+<extend name="Public/base"/>
+
+<block name="body">
+	<div class="content">
+		<div class="panel">
+			<div class="panel-head">
+				<h4>
+					添加广告
+					<span onclick="javascript:history.back()">X</span>
+				</h4>
+			</div>
+			<div class="panel-content">
+				<form action="__URL__/insert_ad" method="post" enctype="multipart/form-data">
+					<table class="table table-border">
+						<tr>
+							<td width="27%">广告名称：</td>
+							<td width="73%">
+								<input type="text" name="ad_title"  size="20" />
+							</td>
+						</tr>
+						<tr>
+							<td height="30">链接地址：</td>
+							<td>
+								<input type="text" name="ad_link"  size="20" />
+							</td>
+						</tr>
+						<tr>
+							<td height="30">上传图片：</td>
+							<td>
+								<input name="image" id="image" type="file" class="file huge" />
+								&nbsp;上传允许文件类型：gif png jpg 图像文件
+							</td>
+						</tr>
+						<tr>
+							<td height="30">广告位置：</td>
+							<td>
+								<input type="text" name="text"  size="20" />
+							</td>
+						</tr>
+						<tr>
+							<td height="30">图片宽度：</td>
+							<td>
+								<input type="text" name="ad_height"  size="5" />
+							</td>
+						</tr>
+						<tr>
+							<td height="30">图片高度：</td>
+							<td>
+								<input type="text" name="ad_width"  size="5" />
+							</td>
+						</tr>
+						<tr>
+							<td height="30">是否显示：</td>
+							<td>
+								<input type="radio" name="is_show" value="1"/>
+								不显示&nbsp;&nbsp;
+								<input type="radio" name="is_show" value="0" checked="checked"/>
+								显示
+							</td>
+						</tr>
+						<tr>
+							<td height="30"></td>
+							<td>
+								<input type="submit" value="确定添加" />
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</block>

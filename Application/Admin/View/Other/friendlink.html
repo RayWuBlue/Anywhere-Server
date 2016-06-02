@@ -1,0 +1,85 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="content">
+    <div class="panel">
+      <div class="panel-head">
+          <ul class="segment-group">
+              <volist name="sub_menu" id="item">
+                  <li <if condition="$item.action_name eq ACTION_NAME">class="curr"</if>>
+                      <a href="{$item.link}">{$item.title}</a>
+                  </li>
+              </volist>
+          </ul>
+      </div>
+      <div class="panel-control">
+        <form action="__APP__/Admin/index/add_link" method="post">
+          <tr>
+            <td>添加链接：</td>
+            <td height="25">
+              <input name="web_name" type="text" value="" size="20"/>
+            </td>
+            <td>
+              <input name="website" type="text" value="http://"  size="25"/>
+            </td>
+            <td>
+              <input name="inside_page" type="text" value="http://"  size="25"/>
+            </td>
+            <td>
+              <input name="web_logo" type="text" value="" size="15" />
+            </td>
+            <td>
+              <input name="show_type" type="text" value="" size="15" />
+            </td>
+            <td>
+              <input type="Submit" name="Submit3" value="添加"  class="btn"/>
+            </td>
+          </tr>
+        </form>
+      </div>
+      <div class="panel-content">
+        <table class="table table-border">
+          <tr>
+            <td width="10%">ID</td>
+            <td width="20%">网站名称</td>
+            <td width="20%">链接地址</td>
+            <td width="10%">内页地址</td>
+            <td width="12%">网站logo</td>
+            <td width="17%">显示类别</td>
+            <td width="11%">操作</td>
+          </tr>
+
+          <volist name="friend_link" id="vo">
+            <form action="__URL__/update_link" method="post">
+              <input type="hidden" value="{$vo.id}" name="id" />
+              <tr>
+                <td>{$vo.id}</td>
+                <td height="25">
+                  <input name="web_name" type="text" value="{$vo.web_name}" size="20"/>
+                </td>
+                <td>
+                  <input name="website" type="text" value="{$vo.website}"  size="25"/>
+                </td>
+                <td>
+                  <input name="inside_page" type="text" value="{$vo.inside_page}"  size="25"/>
+                </td>
+                <td>
+                  <input name="web_logo" type="text" value="{$vo.web_logo}" size="15" />
+                </td>
+                <td>
+                  <input name="show_type" type="text" value="{$vo.show_type}" size="15" />
+                </td>
+                <td>
+                  <input type="Submit" name="Submit3" value="修改"  class="btn"/>
+                  <input type="button" name="Submit" value="删除" class="btn" 
+          onclick="javascript:if(confirm('确定删除？删除后不可恢复!')){
+            window.location.href='__URL__/delete_link/id/'+{$vo.id} ;}else{history.go(0);}" />
+                </td>
+              </tr>
+            </form>
+          </volist>
+        </table>
+      </div>
+    </div>
+  </div>
+</block>

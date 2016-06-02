@@ -1,0 +1,93 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="content">
+    <div class="panel">
+      <div class="panel-head">
+        <ul class="segment-group">
+          <volist name="sub_menu" id="item">
+            <li <if condition="$item.action_name eq ACTION_NAME">class="curr"</if>
+            >
+            <a href="{$item.link}">{$item.title}</a>
+          </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="panel-control">
+      <form action="__URL__/admin_manager_insert" method="post">
+        <tr>
+          <td>
+            <input name="username" type="text"  size="15"/>
+          </td>
+          <td height="25">
+            <input name="password" type="text"  size="15"/>
+          </td>
+          <td>
+            <input name="email" type="text"   size="18"/>
+          </td>
+          <td>
+            <input name="mobile" type="text"  size="15"/>
+          </td>
+          <td>
+            <input name="qq" type="text"  size="15" />
+          </td>
+          <td>
+            <select name="auth">
+              <option value="0">一般管理员</option>
+              <option value="1">超级管理员</option>
+            </select>
+          </td>
+          <td>
+            <input type="Submit" name="Submit3" value="添加管理员"  class="btn"/>
+          </td>
+        </tr>
+      </form>
+    </div>
+    <div class="panel-content">
+      <table class="table table-border">
+        <tr>
+          <td width="6%">账号</td>
+          <td width="6%" >密码</td>
+          <td width="36%">邮箱</td>
+          <td width="20%">权限</td>
+          <td width="20%">修改时间</td>
+          <td width="12%">操作</td>
+        </tr>
+        <volist name="member_users" id="vo">
+          <form action="{:U('admin_manager_update')}" method="post">
+            <input type="hidden" value="{$vo.id}" name="id" />
+            <tr>
+              <td>
+                <input name="username" type="text" value="{$vo.username}" size="15"/>
+              </td>
+              <td height="25">
+                <input name="password" type="text" value="{$vo.password}" size="15"/>
+              </td>
+              <td>
+                <input name="email" type="text" value="{$vo.email}"  size="18"/>
+              </td>
+              <td>
+                <select name="auth">
+                  <option value="0" <eq name="vo.auth" value="0">selected</eq>
+                  >一般管理员
+                </option>
+                <option value="1" <eq name="vo.auth" value="0">selected</eq>
+                >超级管理员
+              </option>
+            </select>
+          </td>
+          <td>{$vo.add_date|date='Y-m-d',###}</td>
+          <td>
+            <input type="Submit" name="Submit3" value="修改"  class="btn"/>
+            <input type="button" name="Submit" value="删除" class="btn" 
+                    onclick="javascript:if(confirm('确定删除？删除后不可恢复!')){
+                      window.location.href='__URL__/admin_manager_delete/id/'+{$vo.id} ;}else{history.go(0);}" />
+          </td>
+        </tr>
+      </form>
+    </volist>
+  </table>
+</div>
+</div>
+</div>
+</block>

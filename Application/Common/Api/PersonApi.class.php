@@ -7,35 +7,35 @@ class PersonApi
 	//获取用户登录信息
 	public function user(){
 		$userid=$_SESSION['userid'];
-		$mid=$_SESSION['mid'];
-		$user=$this->person($userid,$mid);
+		$user_type=$_SESSION['user_type'];
+		$user=$this->person($userid,$user_type);
 		
 		return $user;
 	}
 
-	//人员信息查询（通过ID）    ttedu_userid用户ID  ttedu_mid用户类型  0管理员  1教师  2学生会员
-	public function person($ttedu_userid,$ttedu_mid){
+	//人员信息查询（通过ID）    userid用户ID  user_type用户类型  0管理员  1教师  2学生会员
+	public function person($userid,$user_type){
 		
-		if($ttedu_mid==0){
-			$TheObj =M('manager_user');
-			$manager_user=$TheObj->where('ttedu_id='.$ttedu_userid)->select();
-			if($manager_user){
-				foreach($manager_user as $key => $value){
-					$id = $value['ttedu_id'];
-					$person[$id]['id']= $value['ttedu_id'];
-					$person[$id]['name']= $value['ttedu_musers'];
-					$person[$id]['mid']= $ttedu_mid;
+		if($user_type==0){
+			$model =M('member_user');
+			$member_user=$model->where('id='.$userid)->select();
+			if($member_user){
+				foreach($member_user as $key => $value){
+					$id = $value['id'];
+					$person[$id]['id']= $value['id'];
+					$person[$id]['name']= $value['username'];
+					$person[$id]['user_type']= $user_type;
 				}
 			}
-		}else if($ttedu_mid==2){
-			$TheObj =M('huiyuan_info');
-			$huiyuan_info=$TheObj->where('ttedu_id='.$ttedu_userid)->select();
-			if($huiyuan_info){
-				foreach($huiyuan_info as $key => $value){
-					$id = $value['ttedu_id'];
-					$person[$id]['id']= $value['ttedu_id'];
-					$person[$id]['name']= $value['ttedu_username'];
-					$person[$id]['mid']= $ttedu_mid;
+		}else if($user_type==2){
+			$model =M('member_admin');
+			$member_admin=$model->where('id='.$userid)->select();
+			if($member_admin){
+				foreach($member_admin as $key => $value){
+					$id = $value['id'];
+					$person[$id]['id']= $value['id'];
+					$person[$id]['name']= $value['username'];
+					$person[$id]['user_type']= $user_type;
 				}
 			}
 		}
@@ -43,43 +43,31 @@ class PersonApi
 		return $person;
 	}
 
-	//人员信息查询（通过用户名   密码）    ttedu_userid用户ID  ttedu_mid用户类型  0管理员  1教师  2学生会员
-	public function login($username,$password,$ttedu_mid){
+	//人员信息查询（通过用户名   密码）    userid用户ID  user_type用户类型  0管理员  1教师  2学生会员
+	public function login($username,$password,$user_type){
 		
-		if($ttedu_mid==0){
-			$TheObj =M('manager_user');
-			$map['ttedu_musers']=$username;
-			$map['ttedu_mpassword']=$password;
-			$manager_user=$TheObj->where($map)->select();
-			if($manager_user){
-				foreach($manager_user as $key => $value){
-					$person['id']= $value['ttedu_id'];
-					$person['name']= $value['ttedu_musers'];
-					$person['mid']= $ttedu_mid;
+		if($user_type==0){
+			$model =M('member_user');
+			$map['username']=$username;
+			$map['password']=$password;
+			$member_user=$model->where($map)->select();
+			if($member_user){
+				foreach($member_user as $key => $value){
+					$person['id']= $value['id'];
+					$person['name']= $value['username'];
+					$person['user_type']= $user_type;
 				}
 			}
-		}else if($ttedu_mid==1){
-			$TheObj =M('teach_info');
-			$map['ttedu_username']=$username;
-			$map['ttedu_password']=$password;
-			$teach_info=$TheObj->where($map)->select();
-			if($teach_info){
-				foreach($teach_info as $key => $value){
-					$person['id']= $value['ttedu_id'];
-					$person['name']= $value['ttedu_chenfu'];
-					$person['mid']= $ttedu_mid;
-				}
-			}
-		}else if($ttedu_mid==2){
-			$TheObj =M('huiyuan_info');
-			$map['ttedu_username']=$username;
-			$map['ttedu_password']=$password;
-			$huiyuan_info=$TheObj->where($map)->select();
-			if($huiyuan_info){
-				foreach($huiyuan_info as $key => $value){
-					$person['id']= $value['ttedu_id'];
-					$person['name']= $value['ttedu_username'];
-					$person['mid']= $ttedu_mid;
+		}else if($user_type==2){
+			$model =M('member_admin');
+			$map['username']=$username;
+			$map['password']=$password;
+			$member_admin=$model->where($map)->select();
+			if($member_admin){
+				foreach($member_admin as $key => $value){
+					$person['id']= $value['id'];
+					$person['name']= $value['username'];
+					$person['user_type']= $user_type;
 				}
 			}
 		}

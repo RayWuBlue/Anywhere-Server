@@ -1,0 +1,53 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="content">
+
+    <div class="panel">
+      <div class="panel-head">
+          <ul class="segment-group">
+              <volist name="sub_menu" id="item">
+                  <li <if condition="$item.action_name eq ACTION_NAME">class="curr"</if>>
+                      <a href="{$item.link}">{$item.title}</a>
+                  </li>
+              </volist>
+          </ul>
+      </div>
+      <div class="panel-control">
+        <input type="button" name="Submit3" value="添加广告"  class="btn" onclick="window.location.href='__URL__/add_ad'"/>
+      </div>
+      <div class="panel-content">
+        <table class="table table-border">
+          <tr>
+            <td width="9%" height="25">ID</td>
+            <td width="18%">广告名称</td>
+            <td width="20%">链接地址</td>
+            <td width="25%">添加时间</td>
+            <td width="15%">显示状态</td>
+            <td width="13%">操作</td>
+          </tr>
+
+          <volist name="ad" id="vo">
+            <tr>
+              <td>{$vo.id}</td>
+              <td height="25">{$vo.ad_title}</td>
+              <td>{$vo.ad_link}</td>
+              <td>{$vo.add_date|date='Y-m-d H:i:s',###}</td>
+              <td>
+                <eq name="vo.is_show" value="0">显示</eq>
+                <eq name="vo.is_show" value="1">不显示</eq>
+              </td>
+              <td>
+                <input type="button" name="Submit3" value="查看"  class="btn"
+          onclick="window.location.href='__URL__/detail_ad/id/'+{$vo.id}"/>
+                <input type="button" name="Submit" value="删除" class="btn" 
+          onclick="javascript:if(confirm('确定删除？删除后不可恢复!')){
+            window.location.href='__URL__/delete_ad/id/'+{$vo.id} ;}else{history.go(0);}" />
+              </td>
+            </tr>
+          </volist>
+        </table>
+      </div>
+    </div>
+  </div>
+</block>

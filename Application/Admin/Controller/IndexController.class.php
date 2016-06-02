@@ -4,9 +4,8 @@ namespace Admin\Controller;
 class IndexController extends AdminController {
     
     public function index(){
-            $cates = getAllCate();
+            $cates = M('cate')->order('addtime desc')->select();
             $this -> assign('cates', $cates);
-
             $cateid = $cates[0]['id'];
 
             if ($_POST['cateid']) {
@@ -17,7 +16,7 @@ class IndexController extends AdminController {
                 "cateid" => $cateid
             );
             
-            $m = M('wallpaper');
+            $m = M('News');
 
             $count = $m->where($where)->count();
             $Page = new \Think\Page($count, 25);
@@ -26,17 +25,23 @@ class IndexController extends AdminController {
             $this->assign('list',$list);
             $this->assign('page',$show);
 
+            foreach ($cates as $key => $value) {
+                if ($value['id']==$cateid) {
+                    $this -> assign('catename', $value['name']);
+                    break;
+                }
+            }
             $this -> assign('cateid', $cateid);
             $this -> display();
     }
 
     public function add() {
             if (isset($_POST['cateid'])) {
-                $info = uploadwp();
+                $info = upload_image();
                 if ($info == false) {
                     $this -> error('图片上传失败！');
                 } else {
-                    $Wallpaper = M("wallpaper"); // 实例化Wallpaper对象
+                    $News = M("News"); // 实例化News对象
                     $item = array(
                         "image" => $info[0],
                         "title" => $_POST['title'],
@@ -45,7 +50,7 @@ class IndexController extends AdminController {
                         "cateid" => $_POST['cateid'],
                         "addtime" => date('Y-m-d H:i:s')
                     );
-                    $ret = $Wallpaper -> add($item);
+                    $ret = $News -> add($item);
                     if ($ret > 0) {
                         $this->success('数据保存成功！');
                     } else {
@@ -53,7 +58,7 @@ class IndexController extends AdminController {
                     }
                 }
             } else {
-                $cates = getAllCate();
+                $cates = M('cate')->order('addtime desc')->select();
                 $this -> assign('cates', $cates);
                 $this -> display();
             }
@@ -61,15 +66,77 @@ class IndexController extends AdminController {
 
     public function del() {
         if (isset($_POST['id'])) {
-            $m = M('wallpaper');
+            $m = M('News');
             $ret = $m -> where(array('id' => $_POST['id'])) -> delete();
-            if ($ret == false) {
-                echo 3;
+            if ($ret > 0) {
+                $this -> success('修改成功！');
             } else {
-                echo 1;
+                $this -> error('修改失败！');
             }
         } else {
-            echo 2;
+            $this -> display();
+        }
+    }
+
+
+    public function add_cate() {
+        if (isset($_POST['name'])) {
+            $m = M('cate');
+            $maxorder = $m -> max('showorder');
+            $item = array(
+                "name" => $_POST['name'],
+                "showorder" => intval($maxorder) + 1,
+                "addtime" => date('Y-m-d H:i:s')
+            );
+            $ret = $m -> add($item);
+            if ($ret > 0) {
+                $this -> success('添加成功！');
+            } else {
+                $this -> error('添加失败！');
+            }
+        } else {
+            $this -> display();
+        }
+    }
+
+    public function edit_cate() {
+        if (isset($_POST['id'])) {
+            $m = M('cate');
+            $item = array(
+                "id" => $_POST['id'],
+                "name" => $_POST['name']
+            );
+            $ret = $m -> save($item);
+            if ($ret > 0) {
+                $this -> success('修改成功！');
+            } else {
+                $this -> error('修改失败！');
+            }
+        } else {
+            if (isset($_GET['id'])) {
+                $id = $_GET['id'];
+                $m = M('cate');
+                $cate = $m -> where(array('id' => $id)) -> find();
+                $this -> assign('item', $cate);
+                $this -> assign('id', $id);
+                $this -> display();
+            } else {
+                $this -> error('参数有误！');
+            }
+        }
+    }
+
+    public function del_cate() {
+        if (isset($_POST['id'])) {
+            $m = M('cate');
+            $ret = $m -> where(array('id' => $_POST['id'])) -> delete();
+            if ($ret > 0) {
+                $this -> success('修改成功！');
+            } else {
+                $this -> error('修改失败！');
+            }
+        } else {
+            $this->display();
         }
     }
 }

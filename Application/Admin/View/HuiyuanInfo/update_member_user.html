@@ -1,0 +1,87 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="content">
+    <div class="panel">
+      <div class="panel-head">
+        <h4>修改会员信息<span onclick="javascript:history.back()">X</span></h4>
+      </div>
+      <div class="panel-content">
+      <form method="post">
+        <table class="table table-border">
+          <tr>
+            <td width="10%">用户名：</td>
+            <td width="40%"  >{$member_admin.username}（{$member_admin.id}）</td>
+            <td height="10" width="15%"  >真实姓名:</td>
+            <td width="40%"  >{$member_admin.chenfu}</td>
+          </tr>
+          <tr >
+            <td height="28" >修改密码：</td>
+            <td >
+              <input name="password" type="password" value="" size="40"  />
+              （不修改请留空）
+            </td>
+            <td  >重复密码:</td>
+            <td >
+              <input name="password2" type="password" value="" size="40"  />
+              （不修改请留空）
+            </td>
+          </tr>
+          <tr  >
+            <td height="28"  >性别：</td>
+            <td >
+              <input name="sex" value="男" type="radio" <eq name="member_admin.sex" value="男">checked</eq>
+            />&nbsp;男
+            <input name="sex" value="女" type="radio" <eq name="member_admin.sex" value="女">checked</eq>
+          />&nbsp;女
+        </td>
+        <td  >年龄:</td>
+        <td >
+          <input name="age" type="text" value="{$member_admin.age}" size="5"  />
+          &nbsp;岁
+        </td>
+      </tr>
+      <tr >
+        <td height="28"  >出生年月:</td>
+        <td >
+          <input name="birthday" type="text" value="{$member_admin.birthday}" size="40"  />
+        </td>
+      </tr>
+      <tr>
+        <td height="28"  >手机：</td>
+        <td >
+          <input name="mobilephone" type="text" value="{$member_admin.mobilephone}" size="40"  />
+        </td>
+        <td  >座机:</td>
+        <td >
+          <input name="telephone" type="text" value="{$member_admin.telephone}" size="40"  />
+        </td>
+      </tr>
+      <tr >
+        <td height="28"  >QQ号码：</td>
+        <td >
+          <input name="qq" type="text" value="{$member_admin.qq}" size="40"  />
+        </td>
+        <td  >邮箱号码:</td>
+        <td >
+          <input name="email" type="text" value="{$member_admin.email}" size="40"  />
+        </td>
+      </tr>
+      <tr>
+        <td height="28"  >注册时间：</td>
+        <td >{$member_admin.add_date|date='Y-m-d H:i:s',###}</td>
+        <td  >最后登录时间:</td>
+        <td >{$member_admin.login_date|date='Y-m-d H:i:s',###}</td>
+      </tr>
+      <tr >
+        <td height="25" >&nbsp;</td>
+        <td >
+          <input type="submit" name="button" id="button" value="确认提交"  class="btn"/>
+        </td>
+      </tr>
+    </table>
+    </form>
+  </div>
+</div>
+</div>
+</block>

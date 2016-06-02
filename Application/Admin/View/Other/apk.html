@@ -1,0 +1,64 @@
+<extend name="Public/base"/>
+<block name="style">
+    <style type="text/css">
+        #apk input,select,textarea{
+            width: 700px;
+        }
+        #apk input[type="submit"],button{
+            width: 100px;   
+        }
+    </style>
+</block>
+<block name="body">
+    <div class="content">
+
+        <div class="panel">
+            <div class="panel-head">
+                <ul class="segment-group">
+                    <volist name="sub_menu" id="item">
+                        <li <if condition="$item.action_name eq ACTION_NAME">class="curr"</if>>
+                            <a href="{$item.link}">{$item.title}</a>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+            <div class="panel-content">
+                <form method="post">
+                    <table class="table table-border" id="apk">
+                        <tr>
+                            <td width="20%">APK名称：</td>
+                            <td width="70%">
+                                <input type="text" name="apk_name" value="{$apk.name}"></td>
+                        </tr>
+                        <tr>
+                            <td>APK版本：</td>
+                            <td>
+                                <input type="text" name="apk_version" value="{$apk.version}"></td>
+                        </tr>
+                        <tr>
+                            <td>APK升级号：</td>
+                            <td>
+                                <input type="text" name="apk_code" value="{$apk.code}"></td>
+                        </tr>
+                        <tr>
+                            <td>APK升级日志：</td>
+                            <td>
+                                <textarea name="apk_update_log" rows="10">{$apk.update_log}</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>APK安装包：</td>
+                            <td>
+                                <input type="file" name="apk_file"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="修改"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</block>

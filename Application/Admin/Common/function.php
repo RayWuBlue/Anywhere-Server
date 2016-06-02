@@ -1,11 +1,11 @@
 <?php
+
     function isLogin() {
-        $isLogin = isset($_SESSION['login']) ? $_SESSION['login'] == true : false;
-        $isAdmin = isset($_SESSION['rule']) ? $_SESSION['rule'] == 'admin' : false;
-        return $isLogin && $isAdmin;
+        $admin=$_SESSION['admin'];
+        return !empty($admin);
     }
 
-    function uploadwp(){
+    function upload_image(){
 
         $upload = new \Think\Upload();// 实例化上传类
         
@@ -39,109 +39,4 @@
         $arr = explode('/', $picpath);
         $filename = $arr[count($arr)-1];
         return str_replace($filename, "thumb_".$filename, $picpath);
-    }
-
-    function getAllCate() {
-        return array(
-            array(
-                "id" => 1,
-                "name" => "landscape",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 1,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-            array(
-                "id" => 2,
-                "name" => "mood",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 2,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-            array(
-                "id" => 3,
-                "name" => "building",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 3,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-            array(
-                "id" => 4,
-                "name" => "design",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 4,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-            array(
-                "id" => 5,
-                "name" => "cool",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 5,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-            array(
-                "id" => 6,
-                "name" => "game",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 6,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-            array(
-                "id" => 7,
-                "name" => "animation",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 7,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-            array(
-                "id" => 8,
-                "name" => "art",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 8,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-            array(
-                "id" => 9,
-                "name" => "movie",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 9,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-            array(
-                "id" => 10,
-                "name" => "visual",
-                "name_xby" => "",
-                "name_pty" => "",
-                "name_els" => "",
-                "name_teq" => "",
-                "showorder" => 10,
-                "addtime" => "2015-08-01 11:00:00"
-            ),
-        );
     }

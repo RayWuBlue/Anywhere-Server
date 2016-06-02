@@ -5,33 +5,32 @@ class BBSApi
 {
 	//查询板块
 	public function get_shequ1(){
-		$TheObj =M("shequ_zhuti");
-		$shequ_zhuti=$TheObj->order('ttedu_paixu asc')->select();
-		
-		if($shequ_zhuti){
-			foreach($shequ_zhuti as $key => $value){
-				$id = $value['ttedu_id']; 
-				$list[$id]['ttedu_id']= $value['ttedu_id']; 
-				$list[$id]['ttedu_zhuti_topic']= $value['ttedu_zhuti_topic'];
-				$list[$id]['ttedu_adddate']= $value['ttedu_adddate'];
-				$list[$id]['ttedu_paixu']= $value['ttedu_paixu'];
+		$model =M("forum");
+		$forum=$model->order('"order" asc')->select();
+		if($forum){
+			foreach($forum as $key => $value){
+				$id = $value['id']; 
+				$list[$id]['id']= $value['id']; 
+				$list[$id]['title']= $value['title'];
+				$list[$id]['add_date']= $value['add_date'];
+				$list[$id]['order']= $value['order'];
 				
-				$list[$id]['shequ_info']= $this->get_shequ2($value['ttedu_id']);
+				$list[$id]['forum_post']= $this->get_shequ2($value['id']);
 				//帖子数量
-				$list[$id]['counts']=$this->counts_info($value['ttedu_id']);
+				$list[$id]['counts']=$this->counts_info($value['id']);
 			}
 		}
 		return $list;
 	}
 
 	//查询帖子
-	public function get_shequ2($ttedu_zhuti_id){
-		$TheObj =M("shequ_info");
-		if(!empty($ttedu_zhuti_id)){
-			$map['ttedu_zhuti_id']=$ttedu_zhuti_id;
+	public function get_shequ2($forum_id){
+		$model =M("forum_post");
+		if(!empty($forum_id)){
+			$map['forum_id']=$forum_id;
 		}
 		
-		$count = $TheObj->where($map)->count();    //计算总数
+		$count = $model->where($map)->count();    //计算总数
 		$p = new \Think\Page($count,20);
 	    $p->setConfig('header','篇文章'); 
 	    $p->setConfig('prev',"<"); 
@@ -42,29 +41,29 @@ class BBSApi
 	    //$this->assign( "page2", $page );
 		
 		
-		$shequ_info=$TheObj->where($map)->limit($p->firstRow.','.$p->listRows)->order('ttedu_shifouzhiding desc,ttedu_id desc')->select();
+		$forum_post=$model->where($map)->limit($p->firstRow.','.$p->listRows)->order('is_top desc,id desc')->select();
 		
 		$counts=0;
-		if($shequ_info){
-			foreach($shequ_info as $key => $value){
-				$id = $value['ttedu_id']; 
-				$list[$id]['ttedu_id']= $value['ttedu_id']; 
-				$list[$id]['ttedu_shequ_title']= $value['ttedu_shequ_title'];
-				$list[$id]['ttedu_tiezi_content']= $value['ttedu_tiezi_content'];
-				$list[$id]['ttedu_fbdate']= $value['ttedu_fbdate'];
-				$list[$id]['ttedu_shifouzhiding']= $value['ttedu_shifouzhiding'];
-				$list[$id]['ttedu_shifouretie']= $value['ttedu_shifouretie'];
-				$list[$id]['ttedu_shifoushenghe']= $value['ttedu_shifoushenghe'];
-				$list[$id]['ttedu_userid']= $value['ttedu_userid'];
-				$list[$id]['ttedu_mid']= $value['ttedu_mid'];
-				$list[$id]['ttedu_zhuti_id']= $value['ttedu_zhuti_id'];
+		if($forum_post){
+			foreach($forum_post as $key => $value){
+				$id = $value['id']; 
+				$list[$id]['id']= $value['id']; 
+				$list[$id]['title']= $value['title'];
+				$list[$id]['content']= $value['content'];
+				$list[$id]['add_date']= $value['add_date'];
+				$list[$id]['is_top']= $value['is_top'];
+				$list[$id]['is_hot']= $value['is_hot'];
+				$list[$id]['is_verify']= $value['is_verify'];
+				$list[$id]['userid']= $value['userid'];
+				$list[$id]['user_type']= $value['user_type'];
+				$list[$id]['forum_id']= $value['forum_id'];
 				
-				$list[$id]['shequ_reply_info']= $this->get_shequ3($value['ttedu_id']);
+				$list[$id]['forum_comment']= $this->get_shequ3($value['id']);
 				//回复数量
-				$list[$id]['counts']=$this->counts_reply($value['ttedu_id']);
+				$list[$id]['counts']=$this->counts_reply($value['id']);
 				//人员信息
 			    $person=new PersonApi();
-				$list[$id]['person']= $person->person($value['ttedu_userid'],$value['ttedu_mid']);
+				$list[$id]['person']= $person->person($value['userid'],$value['user_type']);
 			}
 		}
 		
@@ -73,12 +72,12 @@ class BBSApi
 	}
 
 	//查询回复
-	public function get_shequ3($ttedu_info_id){
-		$TheObj = M("shequ_reply_info");
-		if(!empty($ttedu_info_id)){
-			$map['ttedu_info_id']=$ttedu_info_id;
+	public function get_shequ3($info_id){
+		$model = M("forum_comment");
+		if(!empty($info_id)){
+			$map['info_id']=$info_id;
 		}
-		$count = $TheObj->where($map)->count();    //计算总数
+		$count = $model->where($map)->count();    //计算总数
 		$p = new \Think\Page($count,20);
 	    $p->setConfig('header','条回复'); 
 	    $p->setConfig('prev',"<"); 
@@ -89,20 +88,20 @@ class BBSApi
 	    //$this->assign( "page3", $page );
 		
 		
-		$shequ_reply_info=$TheObj->where($map)->limit($p->firstRow.','.$p->listRows)->order('ttedu_id desc')->select(); //查询
+		$forum_comment=$model->where($map)->limit($p->firstRow.','.$p->listRows)->order('id desc')->select(); //查询
 		
-		if($shequ_reply_info){
-			foreach($shequ_reply_info as $key => $value){
-				$id = $value['ttedu_id'];
-				$list[$id]['ttedu_id']= $value['ttedu_id'];
-				$list[$id]['ttedu_reply_content']= $value['ttedu_reply_content'];
-				$list[$id]['ttedu_fbdate']= $value['ttedu_fbdate'];
-				$list[$id]['ttedu_userid']= $value['ttedu_userid'];
-				$list[$id]['ttedu_mid']= $value['ttedu_mid'];
-				$list[$id]['ttedu_info_id']= $value['ttedu_info_id'];
+		if($forum_comment){
+			foreach($forum_comment as $key => $value){
+				$id = $value['id'];
+				$list[$id]['id']= $value['id'];
+				$list[$id]['reply_content']= $value['reply_content'];
+				$list[$id]['add_date']= $value['add_date'];
+				$list[$id]['userid']= $value['userid'];
+				$list[$id]['user_type']= $value['user_type'];
+				$list[$id]['info_id']= $value['info_id'];
 				//人员信息
 			    $person=new PersonApi();
-				$list[$id]['person']= $person->person($value['ttedu_userid'],$value['ttedu_mid']);
+				$list[$id]['person']= $person->person($value['userid'],$value['user_type']);
 			}
 		}
 		
@@ -111,23 +110,23 @@ class BBSApi
 	}
 
 
-	//查询帖子数量（$ttedu_info_id 为空时  查询全部）
-	public function counts_info($ttedu_zhuti_id){
-		$TheObj = M('shequ_info');
-		if(!empty($ttedu_zhuti_id)){
-			$map['ttedu_zhuti_id']=$ttedu_zhuti_id;
+	//查询帖子数量（$info_id 为空时  查询全部）
+	public function counts_info($forum_id){
+		$model = M('forum_post');
+		if(!empty($forum_id)){
+			$map['forum_id']=$forum_id;
 		}
-		$counts=$TheObj->where($map)->count();
+		$counts=$model->where($map)->count();
 		return $counts;
 	}
 
 	//查询回复数量（单个帖子）
-	public function counts_reply($ttedu_info_id){
-		$TheObj =M('shequ_reply_info');
+	public function counts_reply($info_id){
+		$model =M('forum_comment');
 		$counts=0;
-		if(!empty($ttedu_info_id)){
-			$map['ttedu_info_id']=$ttedu_info_id;
-			$counts=$TheObj->where($map)->count();
+		if(!empty($info_id)){
+			$map['info_id']=$info_id;
+			$counts=$model->where($map)->count();
 		}
 		return $counts;
 	}

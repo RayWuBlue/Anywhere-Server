@@ -1,0 +1,66 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="content">
+    <div class="panel">
+      <div class="panel-head">
+          <ul class="segment-group">
+              <volist name="sub_menu" id="item">
+                  <li <if condition="$item.action_name eq ACTION_NAME">class="curr"</if>>
+                      <a href="{$item.link}">{$item.title}</a>
+                  </li>
+              </volist>
+          </ul>
+      </div>
+      <div class="panel-control">
+        <form id="form1" name="form1" method="post" action="__APP__/BBS/add_forum">
+          排序ID
+          <input type="text" name="order" value="999" size="5" />
+          板块名称：
+          <input type="text" name="title" />
+          <input type="submit" value="添加板块" />
+        </form>
+      </div>
+      <div class="panel-content">
+        <table class="table table-border">
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td width="10%">ID</td>
+            <td width="28%" height="25">板块名称</td>
+            <td width="9%">帖子数量</td>
+            <td width="19%">推出时间</td>
+            <td width="13%">排序</td>
+            <td width="16%">操作</td>
+          </tr>
+
+          <volist name="forum" id="vo">
+            <form id="form1" name="form1" method="post" action="__APP__/BBS/update_forum">
+              <input name="id" type="hidden" value="{$vo.id}" />
+              <tr>
+                <td>
+                  <input name="ID" type="checkbox" id="ID" value="" />
+                </td>
+                <td>{$vo.id}</td>
+                <td>
+                  <input type="text" name="title" size="30" value="{$vo.title}" />
+                </td>
+                <td>{$vo.counts}</td>
+                <td>{$vo.add_date|date='Y-m-d H:i:s',###}</td>
+                <td>
+                  <input type="text" name="order" size="5" value="{$vo.order}" />
+                </td>
+                <td>
+                  <input type="Submit" name="Submit3" value="修改" class="btn"/>
+                  <input type="button" name="Submit" value="删除"  class="btn"
+           onclick="javascript:if(confirm('确定删除？删除后不可恢复!')){
+            window.location.href='__APP__/BBS/delete_forum/id/'+{$vo.id};}else{history.go(0);}"/>
+                </td>
+              </tr>
+            </form>
+          </volist>
+        </table>
+        <div>{$page}</div>
+      </div>
+    </div>
+  </div>
+</block>

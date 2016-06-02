@@ -1,0 +1,76 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="content">
+    <div class="panel">
+      <div class="panel-head">
+        <h4>添加帖子<span onclick="javascript:history.back()">X</span></h4>
+      </div>
+      <div class="panel-content">
+        <form  name="add" method="post" action="__URL__/update_post" enctype="multipart/form-data">
+          <input type="hidden" value="{$forum_post.id}" name="id" />
+          <table class="table table-border">
+            <tr>
+              <td width="16%" >帖子标题</td>
+              <td width="84%" >
+                <input name="title" type="text" size="30"  />
+              </td>
+            </tr>
+            <tr>
+              <td width="16%" >主题</td>
+              <td width="84%"  >
+                <select name="forum_id">
+                  <volist name="forum" id="vo">
+                    <option value="{$vo.id}" <eq name="vo.id" value="$forum_post.forum_id">selected</eq>
+                    >{$vo.title}
+                  </option>
+                </volist>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td width="16%" >是否置顶</td>
+            <td width="84%"  >
+              <input type="radio" name="is_top" value="1" <eq name="forum_post.is_top" value="1">checked</eq>
+            />&nbsp;置顶&nbsp;
+            <input type="radio" name="is_top" value="0" <eq name="forum_post.is_top" value="0">checked</eq>
+          />&nbsp;不置顶&nbsp;
+        </td>
+      </tr>
+      <tr>
+        <td width="16%" >是否热帖</td>
+        <td width="84%"  >
+          <input type="radio" name="is_hot" value="1" <eq name="forum_post.is_hot" value="1">checked</eq>
+        />&nbsp;是&nbsp;
+        <input type="radio" name="is_hot" value="0" <eq name="forum_post.is_hot" value="0">checked</eq>
+      />&nbsp;否&nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td width="16%" >是否需要审核</td>
+    <td width="84%"  >
+      <input type="radio" name="is_verify" value="1" <eq name="forum_post.is_verify" value="1">checked</eq>
+    />&nbsp;是&nbsp;
+    <input type="radio" name="is_verify" value="0" <eq name="forum_post.is_verify" value="0">checked</eq>
+  />&nbsp;否&nbsp;
+</td>
+</tr>
+<tr>
+<td height="25" >帖子内容</td>
+<td >
+  <textarea id="content1" name="content" style="width:700px;height:300px;"></textarea>
+</td>
+</tr>
+<tr>
+<td></td>
+<td >
+  <input type="submit" name="button" id="button" value="确认提交"  class="btn"/>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+
+</div>
+</block>

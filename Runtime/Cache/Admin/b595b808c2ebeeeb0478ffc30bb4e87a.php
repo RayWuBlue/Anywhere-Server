@@ -8,26 +8,130 @@
     <link rel="stylesheet" type="text/css" href="/app/Public/Admin/css/common.css">
     <link rel="stylesheet" type="text/css" href="/app/Public/Admin/css/index.css">
     
+    <style type="text/css">
+     #dialog-backgound{
+      background-color: #4E4E4E;
+      position: absolute;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      display: none;
+      width: 100%;
+      height: 1000px;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+      -moz-opacity: 0.5;
+     }
+     #dialog-window
+     {
+      position: absolute;
+      width: 400px;
+      left: 50%;
+      top: 50%;
+      margin-left: -200px;
+      height: auto;
+      z-index: 1000;
+      background-color: #fff;
+     }
+     #dialog-close-button
+     {
+      width: 20px;
+      height: 20px;
+      display: block;
+      font-size: 12px;
+      color: white;
+      padding: 2px;
+      text-align: center;
+      background: #8B8B8B;
+      border-radius: 20px;
+      cursor: pointer;
+     }
+     #dialog-close-button:hover{
+        background: #6F6F6F;
+     }
+     #dialog-window .form
+     {
+      padding: 10px;
+     }
+     .dialog-centent{
+        padding: 10px;
+     }
+ </style>
+
 </head>
 <body>
 	<!-- 头部 -->
 	<div class="main">
-		<div class="header">
-			<h1>WPA(<?php echo (date('Y-m-d',strtotime(date('Y-m-d g:i a',time())))); ?>)</h1>
-			<a class="logout" href="/app/admin.php?s=/auth/logout">注销</a>
+		<div class="side-menu">
+			<ul id="side" class="side">
+				<?php if(is_array($menu)): $i = 0; $__LIST__ = $menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li <?php if($item["action_name"] == CONTROLLER_NAME): ?>class="curr"<?php endif; ?>>
+						<a href="<?php echo ($item["link"]); ?>"><?php echo ($item["title"]); ?></a>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
+			</ul>
 		</div>
-		<!--导航菜单-->
-
-		<ul id="side" class="side">
-			<?php if(is_array($menu)): $i = 0; $__LIST__ = $menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li <?php if($item["action_name"] == CONTROLLER_NAME): ?>class="curr"<?php endif; ?>>
-					<a href="<?php echo ($item["link"]); ?>"><?php echo ($item["title"]); ?></a>
-				</li><?php endforeach; endif; else: echo "" ;endif; ?>
-		</ul>
 		<!--导航菜单结束-->
 	</div>
 	<!-- /头部 -->
 	<!-- 主体 -->
 	
+
+ <div class="dialog" id="dialog-add-cate">
+     <div id="dialog-backgound"></div>
+     <div id="dialog-window" class="panel" style="display: none">
+         <div class="panel-head">
+             <h4>
+                 添加分类
+                 <a id="dialog-close-button" class="float-right">X</a>
+             </h4>
+         </div>
+         <div class="dialog-centent">
+             <form method="post" action="/app/admin.php?s=/Index/add_cate">
+                 <span>分类名：</span><input type="text" name="name">&nbsp;&nbsp;
+                 <input type="submit" value="确定">
+             </form>
+         </div>
+     </div>
+ </div>
+
+ <div class="dialog" id="dialog-rename-cate">
+     <div id="dialog-backgound"></div>
+     <div id="dialog-window" class="panel" style="display: none">
+         <div class="panel-head">
+             <h4>
+                 重命名分类
+                 <a id="dialog-close-button" class="float-right">X</a>
+             </h4>
+         </div>
+         <div class="dialog-centent">
+             <form method="post" action="/app/admin.php?s=/Index/edit_cate">
+                 <span>分类名：</span>
+                 <input type="hidden" name="id" value="<?php echo ($cateid); ?>">
+                 <input type="text" name="name" value="<?php echo ($catename); ?>">&nbsp;&nbsp;
+                 <input type="submit" value="确定">
+             </form>
+         </div>
+     </div>
+ </div>
+
+ <div class="dialog" id="dialog-del-cate">
+     <div id="dialog-backgound"></div>
+     <div id="dialog-window" class="panel" style="display: none">
+         <div class="panel-head">
+             <h4>
+                 警告
+                 <a id="dialog-close-button" class="float-right">X</a>
+             </h4>
+         </div>
+         <div class="dialog-centent">
+             <form method="post" action="/app/admin.php?s=/Index/del_cate">
+                 <h4>是否删除<font color="red"><?php echo ($catename); ?></font>分类？<br/>该分类下的所有新闻将被删除!!</h4>
+                 <input type="hidden" name="id" value="<?php echo ($cateid); ?>">
+                 <input type="submit" value="确定">
+             </form>
+         </div>
+     </div>
+ </div>
+
     <div class="content">
         <div class="panel">
             <div class="panel-head">
@@ -35,15 +139,20 @@
             </div>
             <div class="panel-control">
                 <form id="cateform" action="/app/admin.php?s=/Index/index" method="post">
-                    按分类查看：
                     <select id="cateid" name="cateid" style="width: 300px;height: 30px;">
+                    
                         <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i; if(($cateid == $cate['id'])): ?><option selected="selected" value="<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></option>
                                 <?php else: ?>
                                 <option value="<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></option><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                     </select>
                 </form>
-                <a href="/app/admin.php?s=/Index/add" class="button float-right">添加分类</a>
-                <a href="/app/admin.php?s=/Index/add" class="button float-right">删除当前分类</a>
+                
+                <a class="button float-right dialog-trigger" dialog-id="dialog-add-cate">添加分类
+                </a>
+                <a class="button float-right dialog-trigger" dialog-id="dialog-rename-cate">重命名当前分类
+                </a>
+                <a class="button float-right dialog-trigger" dialog-id="dialog-del-cate">删除当前分类</a>
+                <span class="divider-horizontal float-right"></span>
                 <a href="/app/admin.php?s=/Index/add" class="button float-right">添加新闻</a>
                 <div class="float-clear"></div>
             </div>
@@ -75,9 +184,11 @@
             </div>
         </div>
     </div>
+    <div>
+        
+    </div>
 
 	<!-- /主体 -->
-
 	<!-- 底部 -->
 	<script src="/app/Public/Admin/js/jquery.js"></script>
     <script src="/app/Public/Admin/js/utils.js"></script>
@@ -89,7 +200,6 @@
             $('#cateform').submit();
         });
     });
-
     function del(id) {
         if (confirm('确认删除？')) {
             $.ajax({
@@ -114,7 +224,28 @@
             })
         }
     }
-</script>
+    $(function() {
+      $(".dialog-trigger").click(function() {
+          var dialog = $("#"+$(this).attr('dialog-id'));
+          var dialog_backgound = dialog.children("#dialog-backgound").first();
+          dialog_backgound.css("height",$(document).height());
+          dialog_backgound.fadeIn();
+          
+          var yscroll = document.documentElement.scrollTop;
+          document.documentElement.scrollTop = 0;
+
+          var dialog_window = dialog.children("#dialog-window").first();
+          dialog_window.css("top", "150px");
+          dialog_window.fadeIn();
+          
+          var dialog_close_button = dialog.find("#dialog-close-button").first();
+          dialog_close_button.click(function() {
+              dialog_backgound.fadeOut();
+              dialog_window.fadeOut();
+          });
+        });
+    });
+    </script>
 
 	<!-- /底部 -->
 </body>

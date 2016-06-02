@@ -12,17 +12,13 @@
 <body>
 	<!-- 头部 -->
 	<div class="main">
-		<div class="header">
-			<h1>WPA(<?php echo (date('Y-m-d',strtotime(date('Y-m-d g:i a',time())))); ?>)</h1>
-			<a class="logout" href="/app/admin.php?s=/auth/logout">注销</a>
+		<div class="side-menu">
+			<ul id="side" class="side">
+				<?php if(is_array($menu)): $i = 0; $__LIST__ = $menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li <?php if($item["action_name"] == CONTROLLER_NAME): ?>class="curr"<?php endif; ?>>
+						<a href="<?php echo ($item["link"]); ?>"><?php echo ($item["title"]); ?></a>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
+			</ul>
 		</div>
-		<!--导航菜单-->
-
-		<ul id="side" class="side">
-			<?php if(is_array($menu)): $i = 0; $__LIST__ = $menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li <?php if($item["action_name"] == CONTROLLER_NAME): ?>class="curr"<?php endif; ?>>
-					<a href="<?php echo ($item["link"]); ?>"><?php echo ($item["title"]); ?></a>
-				</li><?php endforeach; endif; else: echo "" ;endif; ?>
-		</ul>
 		<!--导航菜单结束-->
 	</div>
 	<!-- /头部 -->
@@ -32,7 +28,7 @@
 
         <div class="panel">
             <div class="panel-head">
-                <h4>添加新闻</h4>
+                <h4>添加新闻<span onclick="javascript:history.back()">X</span></h4>
             </div>
             <div class="panel-content">
                 <table class="table table-border">
@@ -92,14 +88,13 @@
     </div>
 
 	<!-- /主体 -->
-
 	<!-- 底部 -->
 	<script src="/app/Public/Admin/js/jquery.js"></script>
     <script src="/app/Public/Admin/js/utils.js"></script>
 
     
-    <script charset="utf-8" src="/app/Public/Admin/editor/kindeditor.js"></script>
-    <script charset="utf-8" src="/app/Public/Admin/editor/lang/zh-CN.js"></script>
+    <script charset="utf-8" src="/app/Public/Admin/lib/editor/kindeditor.js"></script>
+    <script charset="utf-8" src="/app/Public/Admin/lib/editor/lang/zh-CN.js"></script>
     <script>
             KindEditor.ready(function(K) {
                     window.editor = K.create('#editor_id');

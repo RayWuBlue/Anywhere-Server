@@ -1,0 +1,107 @@
+<extend name="Public/base"/>
+
+<block name="body">
+	<div class="content">
+		<div class="panel">
+			<div class="panel-head">
+	          <ul class="segment-group">
+	              <volist name="sub_menu" id="item">
+	                  <li <if condition="$item.action_name eq ACTION_NAME">class="curr"</if>>
+	                      <a href="{$item.link}">{$item.title}</a>
+	                  </li>
+	              </volist>
+	          </ul>
+			</div>
+			<div class="panel-control">
+				<select name="ssfl" id="jumpMenu" onChange="window.location.href='__URL__/admin_bbs_post/forum_id/'+this.options[this.selectedIndex].value">
+					<option>---分类查看---</option>
+					<option value="">全部</option>
+					<volist name="forum" id="vo">
+						<option value="{$vo.id}">{$vo.title}</option>
+					</volist>
+				</select>
+				<input type="button" name="Submit3" value="添加帖子"   class="btn"
+					onclick="window.location.href='__URL__/add_post'" />
+			</div>
+			<div class="panel-content">
+				<form id="form1" name="form1" method="post">
+					<table class="table table-border">
+						<tr>
+							<td width="3%">&nbsp;</td>
+							<td width="4%">ID</td>
+							<td width="19%" height="25">帖子标题</td>
+							<td width="13%">发帖时间</td>
+							<td width="12%">所属板块</td>
+							<td width="8%">作者</td>
+							<td width="6%">回复数量</td>
+							<td width="7%">是否置顶</td>
+							<td width="8%">审核状态</td>
+							<td width="20%">操作</td>
+						</tr>
+
+						<volist name="forum_post" id="vo">
+							<tr>
+								<td>
+									<input name="ID" type="checkbox" id="ID" value="" />
+								</td>
+								<td>{$vo.id}</td>
+								<td>
+									<a href="__URL__/edit_post/id/{$vo.id}">{$vo.title}</a>
+									<eq name="vo.is_hot" value="1">
+										[ <font color="#FF0000">热</font>
+										]
+									</eq>
+								</td>
+								<td>{$vo.add_date|date='Y-m-d H:i:s',###}</td>
+								<td>
+									<volist name="forum" id="vo2">
+										<eq name="vo2.id" value="$vo.forum_id">{$vo2.title}</eq>
+									</volist>
+								</td>
+								<td>
+									<eq name="vo.person" value="">
+									匿名
+									<else/>
+									<volist name="vo['person']" id="person">
+										<compare name="person.user_type" value="1" type="eq">
+											<a href="__APP__/Admin/TeachInfo/update_member_teh/id/{$person.id}" style="color:#0000ff">{$person.name}</a>
+										</compare>
+										<compare name="person.user_type" value="2" type="eq">
+											<a href="__APP__/Admin/HuiyuanInfo/update_member_user/id/{$person.id}" style="color:#0000ff">{$person.name}</a>
+										</compare>
+									</volist>
+									</eq>
+								</td>
+								<td>{$vo.counts}</td>
+								<td>
+									<eq name="vo.is_top" value="1">
+										<a href="__URL__/update_is_top/is_top/0/id/{$vo.id}" style="color:#006600;">置顶</a>
+										<else/>
+										<a href="__URL__/update_is_top/is_top/1/id/{$vo.id}" style="color:#006600;">不置顶</a>
+									</eq>
+								</td>
+								<td>
+									<eq name="vo.is_verify" value="1">
+										需要审核
+										<else/>
+										不需要审核
+									</eq>
+								</td>
+								<td>
+									<input type="button" name="Submit3" value="详情"  class="btn"
+			  		onclick="window.location.href='__URL__/edit_post/id/'+{$vo.id} " />
+									<input type="button" name="Submit3" value="查看回复"  class="btn"
+			  		onclick="window.location.href='__URL__/forum_comment/info_id/'+{$vo.id} " />
+									<input type="button" name="Submit3" value="删除"  class="btn"
+					onclick="javascript:if(confirm('确定删除？删除后不可恢复!')){
+					window.location.href='__URL__/delete_post/id/'+{$vo.id};}else{history.go(0);}" />
+								</td>
+							</tr>
+						</volist>
+					</table>
+					<div>{$page2}</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</block>

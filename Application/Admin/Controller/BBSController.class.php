@@ -5,111 +5,110 @@ use Common\Api\BBSApi;
 class BBSController extends AdminController
 {
 
-	public function admin_bbs_tiezi()
+	public function admin_bbs_post()
     {
 		
-		$TheObj =M('shequ_zhuti');//实例化模型类
-		$shequ_zhuti=$TheObj->select();
-		$this->assign("shequ_zhuti",$shequ_zhuti);
-		
-		
-	  $ttedu_zhuti_id=$_REQUEST['ttedu_zhuti_id'];
-	  $bbs=new BBSApi();
-	  $shequ_info=$bbs->get_shequ2($ttedu_zhuti_id);
-	  $this->assign("shequ_info",$shequ_info);
-	  
-	  $this->display();
+		$model =M('forum');//实例化模型类
+		$forum=$model->select();
+		$this->assign("forum",$forum);
+
+		$forum_id=$_REQUEST['forum_id'];
+		$bbs=new BBSApi();
+		$forum_post=$bbs->get_shequ2($forum_id);
+		$this->assign("forum_post",$forum_post);
+
+		$this->display();
     }
 
 
-	public function add_tiezi()
+	public function add_post()
     {
-		$TheObj =M('shequ_zhuti');//实例化模型类
-		$shequ_zhuti=$TheObj->select();
-		$this->assign("shequ_zhuti",$shequ_zhuti);
+		$model =M('forum');//实例化模型类
+		$forum=$model->select();
+		$this->assign("forum",$forum);
 		
 		$this->display();
     }
 	
 
-	public function insert_tiezi()
+	public function insert_post()
     {
-		  $TheObj= D("shequ_info"); 
-		  if($TheObj->Create()){
-			  $result=$TheObj->add();//写入数据库
-			  $this->redirect('add_tiezi');
+		  $model= D("forum_post"); 
+		  if($model->Create()){
+			  $result=$model->add();//写入数据库
+			  $this->redirect('add_post');
 		  }else{
-			  $err=$TheObj->getError();
+			  $err=$model->getError();
 			  echo "<script>alert('".$err."');history.go(-1);</script>";
 		  }
     }
 	
 
-	public function xiugai_tiezi()
+	public function edit_post()
     {
-        $ttedu_id=$_REQUEST['ttedu_id'];
-		if(!empty($ttedu_id)){
-			$TheObj =M('shequ_zhuti');//实例化模型类
-			$shequ_zhuti=$TheObj->select();
-			$this->assign("shequ_zhuti",$shequ_zhuti);
+        $id=$_REQUEST['id'];
+		if(!empty($id)){
+			$model =M('forum');//实例化模型类
+			$forum=$model->select();
+			$this->assign("forum",$forum);
 			
-			$TheObj =M('shequ_info');//实例化模型类
-			$shequ_info=$TheObj->where("ttedu_id=".$ttedu_id)->find(); //查询
-			$this->assign("shequ_info",$shequ_info);
+			$model =M('forum_post');//实例化模型类
+			$forum_post=$model->where("id=".$id)->find(); //查询
+			$this->assign("forum_post",$forum_post);
 			$this->display();
 		}else{
 			echo "<script>alert('参数错误！');history.go(-1);</script>";
 		}
     } 
 
-	public function update_shifouzhiding()
+	public function update_is_top()
     {
-	  $TheObj=M("shequ_info"); 
-	  $ttedu_id=$_REQUEST['ttedu_id'];
-	  $shifouzhiding=$_REQUEST['shifouzhiding'];
-	  if(!empty($ttedu_id)){
-	  	  $TheObj->ttedu_id=$ttedu_id;
-		  $TheObj->ttedu_shifouzhiding=$shifouzhiding;
-		  $TheObj->save(); // 保存当前数据对象
-		  $this->redirect('admin_bbs_tiezi');
+	  $model=M("forum_post"); 
+	  $id=$_REQUEST['id'];
+	  $is_top=$_REQUEST['is_top'];
+	  if(!empty($id)){
+	  	  $model->id=$id;
+		  $model->is_top=$is_top;
+		  $model->save(); // 保存当前数据对象
+		  $this->redirect('admin_bbs_post');
 	  }
     }
 
-public function update_tiezi()
+public function update_post()
     {
-	  $TheObj= D("shequ_info"); 
+	  $model= D("forum_post"); 
 	  
-	  if($TheObj->Create()){
-		  $TheObj->save(); // 保存当前数据对象
-		  $this->redirect('admin_bbs_tiezi');
+	  if($model->Create()){
+		  $model->save(); // 保存当前数据对象
+		  $this->redirect('admin_bbs_post');
 	   }else{
-	  	  $err=$TheObj->getError();
+	  	  $err=$model->getError();
 		  echo "<script>alert('".$err."');history.go(-1);</script>";
 	  }
 	  
     }
 
 
-public function delete_tiezi()
+public function delete_post()
     {
-      $TheObj= M("shequ_info"); 
-	  $ttedu_id=$_REQUEST['ttedu_id'];
-      $result=$TheObj->delete($ttedu_id);
+      $model= M("forum_post"); 
+	  $id=$_REQUEST['id'];
+      $result=$model->delete($id);
 	  
-	  $TheObj= M("shequ_reply_info");
-	  $result=$TheObj->where('ttedu_info_id='.$ttedu_id)->delete();
-      $this->redirect('admin_bbs_tiezi');
+	  $model= M("forum_comment");
+	  $result=$model->where('info_id='.$id)->delete();
+      $this->redirect('admin_bbs_post');
     }
 
 
 
-public function shequ_reply_info()
+public function forum_comment()
     {
-	  $ttedu_info_id=$_REQUEST['ttedu_info_id'];
+	  $info_id=$_REQUEST['info_id'];
 	  $bbs=new BBSApi();
-	  $shequ_reply_info=$bbs->get_shequ3($ttedu_info_id);
+	  $forum_comment=$bbs->get_shequ3($info_id);
 	  
-	  $this->assign('shequ_reply_info',$shequ_reply_info);//根据模板变量赋值
+	  $this->assign('forum_comment',$forum_comment);//根据模板变量赋值
 	  
 	  $this->display();
     }
@@ -117,62 +116,62 @@ public function shequ_reply_info()
 
 	public function delete_reply()
     {
-	  $ttedu_id=$_REQUEST['ttedu_id'];
-      $TheObj= M("shequ_reply_info");
-      $result=$TheObj->delete($ttedu_id);
+	  $id=$_REQUEST['id'];
+      $model= M("forum_comment");
+      $result=$model->delete($id);
 	  
 	  
-	  $ttedu_info_id=$_REQUEST['ttedu_info_id'];
-      $this->redirect('bbs/shequ_reply_info/ttedu_info_id/'.$ttedu_info_id);
+	  $info_id=$_REQUEST['info_id'];
+      $this->redirect('bbs/forum_comment/info_id/'.$info_id);
     }
     
-	public function admin_bbs_bankuai()
+	public function admin_bbs_forum()
     {
 		$bbs=new BBSApi();
-		$shequ_zhuti=$bbs->get_shequ1();
-		//$TheObj =M('shequ_zhuti');//实例化模型类
-		//$shequ_zhuti=$TheObj->select();
+		$forum=$bbs->get_shequ1();
+		//$model =M('forum');//实例化模型类
+		//$forum=$model->select();
 		
-		$this->assign("shequ_zhuti",$shequ_zhuti);
+		$this->assign("forum",$forum);
 		$this->display();
     }
 	
-	public function add_bankuai()
+	public function add_forum()
     {
-	  $TheObj= D("shequ_zhuti"); 
+	  $model= D("forum"); 
 	  
-	  if($TheObj->Create()){
-	  	  $result=$TheObj->add();//写入数据库
-		  $this->redirect('admin_bbs_bankuai');
+	  if($model->Create()){
+	  	  $result=$model->add();//写入数据库
+		  $this->redirect('admin_bbs_forum');
 	  }else{
-	  	  $err=$TheObj->getError();
+	  	  $err=$model->getError();
 		  echo "<script>alert('".$err."');history.go(-1);</script>";
 	  }
 	  
     }
 	
 
-	public function update_bankuai()
+	public function update_forum()
     {
-	  $TheObj= D("shequ_zhuti"); 
+	  $model= D("forum"); 
 	  
-	  if($TheObj->Create()){
-	  	  $result=$TheObj->save();//写入数据库
-		  $this->redirect('admin_bbs_bankuai');
+	  if($model->Create()){
+	  	  $result=$model->save();//写入数据库
+		  $this->redirect('admin_bbs_forum');
 	  }else{
-	  	  $err=$TheObj->getError();
+	  	  $err=$model->getError();
 		  echo "<script>alert('".$err."');history.go(-1);</script>";
 	  }
 	  
     }
 	
 
-	public function delete_bankuai()
+	public function delete_forum()
     {
-	  $TheObj= M("shequ_zhuti"); 
-	  $ttedu_id=$_REQUEST['ttedu_id'];
-      $result=$TheObj->delete($ttedu_id);
+	  $model= M("forum"); 
+	  $id=$_REQUEST['id'];
+      $result=$model->delete($id);
 	  
-      $this->redirect('admin_bbs_bankuai');
+      $this->redirect('admin_bbs_forum');
     }
 }

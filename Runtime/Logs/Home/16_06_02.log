@@ -1,0 +1,148 @@
+[ 2016-06-02T00:07:31+08:00 ] ::1 /app/index.php/Api/get_news_categories
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002271s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001788s ]
+
+[ 2016-06-02T00:07:42+08:00 ] ::1 /app/index.php/Api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0676s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003516s ]
+
+[ 2016-06-02T00:07:51+08:00 ] ::1 /app/index.php/Api/get_forum_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
+ERR: 参数错误或者未定义:forum_id
+
+[ 2016-06-02T00:08:04+08:00 ] ::1 /app/index.php/Api/get_forum_posts/forum_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+SQL: SHOW COLUMNS FROM `forum_post` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `forum_post` WHERE ( forum_id=1 ) LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002081s ]
+
+[ 2016-06-02T00:08:19+08:00 ] ::1 /app/index.php/Api/get_forum_posts
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+ERR: 参数错误或者未定义:forum_id
+
+[ 2016-06-02T00:26:15+08:00 ] ::1 /app/index.php/Api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001939s ]
+
+[ 2016-06-02T00:26:16+08:00 ] ::1 /app/index.php/Api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001830s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002015s ]
+
+[ 2016-06-02T00:26:17+08:00 ] ::1 /app/index.php/Api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001861s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001969s ]
+
+[ 2016-06-02T00:26:17+08:00 ] ::1 /app/index.php/Api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001807s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001982s ]
+
+[ 2016-06-02T00:26:17+08:00 ] ::1 /app/index.php/Api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001844s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002121s ]
+
+[ 2016-06-02T00:30:21+08:00 ] ::1 /app/index.php/Api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001779s ]
+
+[ 2016-06-02T00:33:52+08:00 ] ::1 /app/index.php/Api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001888s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001920s ]
+

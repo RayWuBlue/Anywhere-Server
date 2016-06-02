@@ -1,7 +1,7 @@
 <?php
 return array(
   
-    'DEFAULT_MODULE'     => 'Admin',
+    'DEFAULT_MODULE'     => 'Index',
 
     /* URL配置 */
     'URL_CASE_INSENSITIVE' => true, //默认false 表示URL区分大小写 true则表示不区分大小写
@@ -15,7 +15,7 @@ return array(
     /* 数据库配置 */
     'DB_TYPE'   => 'mysql', // 数据库类型
     'DB_HOST'   => 'localhost', // 服务器地址
-    'DB_NAME'   => 'wpa', // 数据库名
+    'DB_NAME'   => 'app', // 数据库名
     'DB_USER'   => 'root', // 用户名
     'DB_PWD'    => '',  // 密码
     'DB_PORT'   => '3306', // 端口
