@@ -188,7 +188,7 @@ input[type="submit"]:hover,input[type="button"]:hover,button:hover{
     background-color: #3780FD;
 }
 .panel .panel-head ul.segment-group li.curr>a,
-.panel .panel-head ul.segment-group li a:hover{
+.panel .panel-head ul.segment-group li>a:hover{
     color: #fff;
 }
 .panel .panel-head ul.segment-group li:first-child{

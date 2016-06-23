@@ -27,7 +27,7 @@ CREATE TABLE `ad` (
   `ad_width` int(10) DEFAULT NULL,
   `ad_height` int(10) DEFAULT '0',
   `text` varchar(60) DEFAULT NULL,
-  `add_date` int(11) DEFAULT NULL,
+  `add_time` int(11) DEFAULT NULL,
   `is_show` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
@@ -47,7 +47,7 @@ CREATE TABLE `cate` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(30) NOT NULL,
   `showorder` smallint(6) NOT NULL,
-  `addtime` datetime NOT NULL,
+  `add_time` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
@@ -68,7 +68,7 @@ CREATE TABLE `feedback` (
   `email` varchar(40) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   `content` text,
-  `add_date` int(11) DEFAULT NULL,
+  `add_time` int(11) DEFAULT NULL,
   `feedback_reply` text,
   `reply_date` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -88,7 +88,7 @@ DROP TABLE IF EXISTS `forum`;
 CREATE TABLE `forum` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(200) DEFAULT NULL,
-  `add_date` int(11) DEFAULT NULL,
+  `add_time` int(11) DEFAULT NULL,
   `order` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
@@ -111,7 +111,7 @@ DROP TABLE IF EXISTS `forum_comment`;
 CREATE TABLE `forum_comment` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `reply_content` text,
-  `add_date` int(11) DEFAULT NULL,
+  `add_time` int(11) DEFAULT NULL,
   `userid` int(10) DEFAULT '0',
   `user_type` int(10) DEFAULT '0',
   `info_id` int(10) DEFAULT '0',
@@ -144,7 +144,7 @@ CREATE TABLE `forum_post` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(200) DEFAULT NULL,
   `content` text,
-  `add_date` int(11) DEFAULT NULL,
+  `add_time` int(11) DEFAULT NULL,
   `is_top` tinyint(1) DEFAULT '0',
   `is_hot` tinyint(1) DEFAULT '0',
   `is_verify` tinyint(1) DEFAULT '0',
@@ -245,8 +245,8 @@ CREATE TABLE `member_admin` (
   `telephone` varchar(12) DEFAULT NULL,
   `qq` varchar(20) DEFAULT NULL,
   `email` varchar(40) DEFAULT NULL,
-  `add_date` int(11) DEFAULT NULL,
-  `login_date` int(11) DEFAULT NULL,
+  `add_time` int(11) DEFAULT NULL,
+  `login_time` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
@@ -270,7 +270,7 @@ CREATE TABLE `member_user` (
   `mobile` varchar(12) DEFAULT NULL,
   `qq` varchar(15) DEFAULT NULL,
   `auth` int(1) DEFAULT '1',
-  `add_date` int(11) DEFAULT NULL,
+  `add_time` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
@@ -290,8 +290,8 @@ CREATE TABLE `news` (
   `content` text NOT NULL,
   `summary` varchar(200) DEFAULT NULL,
   `image` varchar(256) NOT NULL,
-  `cateid` int(11) NOT NULL,
-  `addtime` datetime NOT NULL,
+  `cate_id` int(11) NOT NULL,
+  `add_time` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 

@@ -39,7 +39,7 @@
 							<td width="12%" height="30" align="right">留言标题：</td>
 							<td width="28%" align="left"><?php echo ($vo["title"]); ?></td>
 							<td width="10%" height="30" align="right">留言时间：</td>
-							<td width="19%" align="left"><?php echo (date('Y-m-d H:i:s',$vo["add_date"])); ?></td>
+							<td width="19%" align="left"><?php echo (date('Y-m-d H:i:s',$vo["add_time"])); ?></td>
 							<td width="11%" height="30" align="right">留言者：</td>
 							<td width="20%" align="left"><?php echo ($vo["username"]); ?></td>
 						</tr>
@@ -64,7 +64,7 @@
 								  }
 							  </script>
 								<div id="div<?php echo ($k); ?>" style="display:none">
-									<form action="/app/admin.php?s=/Admin/index/up_ly" method="post" onsubmit="return submit(<?php echo ($k); ?>);">
+									<form action="/app/admin.php?s=/Other/update_feedback" method="post" onsubmit="return submit(<?php echo ($k); ?>);">
 										<input type="hidden" name="id" value="<?php echo ($vo["id"]); ?>" />
 										<textarea name="feedback_reply" rows="3" cols="30"></textarea>
 										<br />

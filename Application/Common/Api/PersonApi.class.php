@@ -18,7 +18,7 @@ class PersonApi
 		
 		if($user_type==0){
 			$model =M('member_user');
-			$member_user=$model->where('id='.$userid)->select();
+			$member_user=$model->where(array('id'=>$userid))->select();
 			if($member_user){
 				foreach($member_user as $key => $value){
 					$id = $value['id'];
@@ -29,7 +29,7 @@ class PersonApi
 			}
 		}else if($user_type==2){
 			$model =M('member_admin');
-			$member_admin=$model->where('id='.$userid)->select();
+			$member_admin=$model->where(array('id'=>$userid))->select();
 			if($member_admin){
 				foreach($member_admin as $key => $value){
 					$id = $value['id'];

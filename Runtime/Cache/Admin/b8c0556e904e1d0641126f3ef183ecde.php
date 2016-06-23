@@ -38,7 +38,7 @@
                                 <span>新闻分类：</span>
                             </td>
                             <td>
-                                <select name="cateid" style="width: 800px">
+                                <select name="cate_id" style="width: 800px">
                                     <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><option value="<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </select>
                             </td>
@@ -61,10 +61,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <span>缩略图：</span>
-                            </td>
-                            <td>
-                                <input type="file" name="image"/>
+                                <span>封面模式：</span>
                             </td>
                         </tr>
                         <tr>

@@ -32,7 +32,7 @@
               <td>{$vo.id}</td>
               <td height="25">{$vo.ad_title}</td>
               <td>{$vo.ad_link}</td>
-              <td>{$vo.add_date|date='Y-m-d H:i:s',###}</td>
+              <td>{$vo.add_time|date='Y-m-d H:i:s',###}</td>
               <td>
                 <eq name="vo.is_show" value="0">显示</eq>
                 <eq name="vo.is_show" value="1">不显示</eq>

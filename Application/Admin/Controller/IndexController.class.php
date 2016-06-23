@@ -4,16 +4,16 @@ namespace Admin\Controller;
 class IndexController extends AdminController {
     
     public function index(){
-            $cates = M('cate')->order('addtime desc')->select();
+            $cates = M('cate')->order("'add_time' desc")->select();
             $this -> assign('cates', $cates);
-            $cateid = $cates[0]['id'];
+            $cate_id = $cates[0]['id'];
 
-            if ($_POST['cateid']) {
-                $cateid = $_POST['cateid'];
+            if ($_POST['cate_id']) {
+                $cate_id = $_POST['cate_id'];
             }
 
             $where = array(
-                "cateid" => $cateid
+                "cate_id" => $cate_id
             );
             
             $m = M('News');
@@ -21,45 +21,68 @@ class IndexController extends AdminController {
             $count = $m->where($where)->count();
             $Page = new \Think\Page($count, 25);
             $show = $Page->show();
-            $list = $m->where($where)->order('addtime desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+            $list = $m->where($where)->order("'add_time' desc")->limit($Page->firstRow.','.$Page->listRows)->select();
             $this->assign('list',$list);
             $this->assign('page',$show);
 
             foreach ($cates as $key => $value) {
-                if ($value['id']==$cateid) {
+                if ($value['id']==$cate_id) {
                     $this -> assign('catename', $value['name']);
                     break;
                 }
             }
-            $this -> assign('cateid', $cateid);
+            $this -> assign('cate_id', $cate_id);
             $this -> display();
     }
 
     public function add() {
-            if (isset($_POST['cateid'])) {
+            if (isset($_POST['cate_id'])) {
                 $info = upload_image();
-                if ($info == false) {
-                    $this -> error('图片上传失败！');
+                $News = M("News"); // 实例化News对象
+                $item = array(
+                    "image_cover" => $info[0],
+                    "title" => $_POST['title'],
+                    "summary" => $_POST['summary'],
+                    "content" => $_POST['content'],
+                    "cate_id" => $_POST['cate_id'],
+                    "add_time" => date('Y-m-d H:i:s')
+                );
+                $ret = $News -> add($item);
+                if ($ret > 0) {
+                    $this->success('数据保存成功！');
                 } else {
-                    $News = M("News"); // 实例化News对象
-                    $item = array(
-                        "image" => $info[0],
-                        "title" => $_POST['title'],
-                        "summary" => $_POST['summary'],
-                        "content" => $_POST['content'],
-                        "cateid" => $_POST['cateid'],
-                        "addtime" => date('Y-m-d H:i:s')
-                    );
-                    $ret = $News -> add($item);
-                    if ($ret > 0) {
-                        $this->success('数据保存成功！');
-                    } else {
-                        $this->error('数据保存失败！');
-                    }
+                    $this->error('数据保存失败！');
                 }
             } else {
-                $cates = M('cate')->order('addtime desc')->select();
+                $cates = M('cate')->order("'add_time' desc")->select();
                 $this -> assign('cates', $cates);
+                $this -> display();
+            }
+    }
+
+    public function edit() {
+        if (isset($_POST['id'])) {
+                $info = upload_image();
+                $News = M("News"); // 实例化News对象
+                $item = array(
+                    "id" => $_POST['id'],
+                    "image_cover" => $info[0],
+                    "title" => $_POST['title'],
+                    "summary" => $_POST['summary'],
+                    "content" => $_POST['content'],
+                    "cate_id" => $_POST['cate_id'],
+                    "add_time" => date('Y-m-d H:i:s')
+                );
+                $ret = $News->save($item);
+                if ($ret > 0) {
+                    $this->success('数据保存成功！');
+                } else {
+                    $this->error('数据保存失败！');
+                }
+            } else {
+                $cates = M('cate')->order("'add_time' desc")->select();
+                $this -> assign('cates', $cates);
+                $this -> assign('news',M('news')->find($id));
                 $this -> display();
             }
     }
@@ -86,7 +109,7 @@ class IndexController extends AdminController {
             $item = array(
                 "name" => $_POST['name'],
                 "showorder" => intval($maxorder) + 1,
-                "addtime" => date('Y-m-d H:i:s')
+                "add_time" => date('Y-m-d H:i:s')
             );
             $ret = $m -> add($item);
             if ($ret > 0) {

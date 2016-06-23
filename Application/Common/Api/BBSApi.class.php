@@ -12,7 +12,7 @@ class BBSApi
 				$id = $value['id']; 
 				$list[$id]['id']= $value['id']; 
 				$list[$id]['title']= $value['title'];
-				$list[$id]['add_date']= $value['add_date'];
+				$list[$id]['add_time']= $value['add_time'];
 				$list[$id]['order']= $value['order'];
 				
 				$list[$id]['forum_post']= $this->get_shequ2($value['id']);
@@ -50,7 +50,7 @@ class BBSApi
 				$list[$id]['id']= $value['id']; 
 				$list[$id]['title']= $value['title'];
 				$list[$id]['content']= $value['content'];
-				$list[$id]['add_date']= $value['add_date'];
+				$list[$id]['add_time']= $value['add_time'];
 				$list[$id]['is_top']= $value['is_top'];
 				$list[$id]['is_hot']= $value['is_hot'];
 				$list[$id]['is_verify']= $value['is_verify'];
@@ -95,7 +95,7 @@ class BBSApi
 				$id = $value['id'];
 				$list[$id]['id']= $value['id'];
 				$list[$id]['reply_content']= $value['reply_content'];
-				$list[$id]['add_date']= $value['add_date'];
+				$list[$id]['add_time']= $value['add_time'];
 				$list[$id]['userid']= $value['userid'];
 				$list[$id]['user_type']= $value['user_type'];
 				$list[$id]['info_id']= $value['info_id'];

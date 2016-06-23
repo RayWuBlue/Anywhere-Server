@@ -96,7 +96,7 @@
               </option>
             </select>
           </td>
-          <td><?php echo (date('Y-m-d',$vo["add_date"])); ?></td>
+          <td><?php echo (date('Y-m-d',$vo["add_time"])); ?></td>
           <td>
             <input type="Submit" name="Submit3" value="修改"  class="btn"/>
             <input type="button" name="Submit" value="删除" class="btn" 

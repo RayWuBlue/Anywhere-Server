@@ -1,0 +1,85 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="content">
+
+        <div class="panel">
+            <div class="panel-head">
+                <h4>编辑新闻<span onclick="javascript:history.back()">X</span></h4>
+            </div>
+            <div class="panel-content">
+                <table class="table table-border">
+                    <form action="" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="{$news.id}">
+                        <tr>
+                            <td>
+                                <span>新闻分类：</span>
+                            </td>
+                            <td>
+                                <select name="cate_id" style="width: 800px">
+                                    <volist name="cates" id="cate">
+                                    <option value="{$cate.id}" <eq name="$news.cate_id" value="$caye.id">selected</eq>>{$cate.name}</option>
+                                    </volist>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>新闻标题：</span>
+                            </td>
+                            <td>
+                                <input type="text" name="title" value="{$news.title}" style="width: 800px"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>新闻摘要：</span>
+                            </td>
+                            <td>
+                                <textarea name="summary" rows="3"  style="width: 800px" >{$news.summary}</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>封面：</span>
+                            </td>
+                            <td>
+                                <img src="{$news.image_cover}">
+                            </td>
+                            <td><input type="button" value="清除封面"></td>
+                            <td>
+                                <input type="file" name="image"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>新闻内容：</span>
+                            </td>
+                            <td>
+                                <textarea id="editor_id" rows="20" name="content" style="width: 800px">{$news.content}</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="完成"/>
+                            </td>
+                        </tr>
+                    </div>
+                </form>
+            </table>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script charset="utf-8" src="__WIDGET_LIB__/editor/kindeditor.js"></script>
+    <script charset="utf-8" src="__WIDGET_LIB__/editor/lang/zh_CN.js"></script>
+    <script type="text/javascript">
+    KindEditor.ready(function(K){
+        K.create('textarea[name="content"]', {
+            afterBlur: function(){this.sync();
+            }
+        });
+    });
+</script>
+</block>

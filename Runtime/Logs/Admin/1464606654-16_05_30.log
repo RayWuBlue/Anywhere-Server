@@ -903,11 +903,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0085s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0097s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0033s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0008s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
@@ -931,11 +931,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0074s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0103s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
@@ -959,11 +959,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0079s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0098s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0003s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
@@ -987,10 +987,10 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001347s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0064s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0116s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 3 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 3 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 3 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
@@ -1036,11 +1036,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0087s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0127s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0007s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0008s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
@@ -1497,11 +1497,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.3017s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0008s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0161s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0008s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0009s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
@@ -1525,11 +1525,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0079s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0085s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
@@ -2081,11 +2081,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0084s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0111s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0007s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
@@ -2133,11 +2133,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0067s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0114s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
@@ -2161,7 +2161,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0066s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
@@ -2185,7 +2185,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0067s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
@@ -2209,7 +2209,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0068s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
@@ -2233,7 +2233,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0084s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
@@ -2257,11 +2257,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001537s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001737s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0102s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0005s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0122s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
@@ -2285,11 +2285,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0066s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0111s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0003s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
@@ -2313,11 +2313,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0079s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0097s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
@@ -2341,11 +2341,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001421s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001622s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0133s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0007s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0164s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0008s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0008s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
@@ -2489,11 +2489,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001467s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0079s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0088s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
@@ -2517,7 +2517,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0080s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
@@ -2541,7 +2541,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0067s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
@@ -2565,7 +2565,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001356s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001557s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0067s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
@@ -2589,7 +2589,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0068s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
@@ -2613,7 +2613,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001387s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001580s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0086s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
@@ -3855,11 +3855,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.1062s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0005s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.2076s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0008s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0009s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
@@ -3905,11 +3905,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0076s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0127s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
@@ -3957,11 +3957,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0067s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0129s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
@@ -4009,11 +4009,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0071s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0112s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
@@ -4037,11 +4037,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001372s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0082s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0095s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
@@ -4065,11 +4065,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001404s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0069s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0090s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
@@ -4093,11 +4093,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0068s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0115s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
@@ -4121,11 +4121,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0068s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0101s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
@@ -4149,11 +4149,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0087s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0086s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
@@ -4177,11 +4177,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001360s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0066s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0102s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
@@ -4205,11 +4205,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001398s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0068s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0103s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
@@ -4233,7 +4233,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0080s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
@@ -4585,11 +4585,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001411s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0085s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0102s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
@@ -4635,11 +4635,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0081s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0115s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
@@ -4685,11 +4685,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0098s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0005s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0152s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
@@ -4735,11 +4735,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0084s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0093s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
@@ -4785,11 +4785,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0066s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0093s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0003s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
@@ -5193,11 +5193,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
 NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 15 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0081s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0077s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
@@ -5274,11 +5274,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
 NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 15 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0084s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0085s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
@@ -5785,11 +5785,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0086s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0097s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
@@ -7062,11 +7062,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001479s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0081s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0108s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
@@ -7530,11 +7530,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.1229s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0007s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0169s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0007s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0008s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
@@ -8164,11 +8164,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0079s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0152s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0008s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
@@ -10307,11 +10307,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.1292s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0005s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.6223s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0008s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0008s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000390s ]
@@ -13062,11 +13062,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0079s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0113s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
@@ -13607,11 +13607,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0074s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0124s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
@@ -14333,11 +14333,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0070s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0110s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
@@ -14362,7 +14362,7 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0105s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
@@ -14707,11 +14707,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0083s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0122s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
@@ -15466,11 +15466,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001050s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0070s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0098s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
@@ -16559,11 +16559,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0080s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0095s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0007s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
@@ -17634,11 +17634,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0082s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0100s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
@@ -17686,11 +17686,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.2116s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0007s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.5083s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
@@ -17715,7 +17715,7 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001486s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.1425s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
@@ -17740,11 +17740,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0070s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0113s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
@@ -17769,11 +17769,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001548s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0078s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0118s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0003s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
@@ -17798,11 +17798,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0087s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0005s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0117s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0006s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0007s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
@@ -17847,10 +17847,10 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0069s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0124s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 3 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 3 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 3 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
@@ -17875,10 +17875,10 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001042s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0084s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0092s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
@@ -17926,11 +17926,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0067s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0112s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
@@ -17978,11 +17978,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001467s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 17 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0066s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0114s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
@@ -21777,11 +21777,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001431s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001626s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0087s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0097s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
@@ -21829,11 +21829,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0068s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0003s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0084s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0003s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
@@ -21921,11 +21921,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0105s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0017s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0121s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0033s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
@@ -24666,11 +24666,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0071s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0112s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0006s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
@@ -24695,10 +24695,10 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001332s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0072s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0098s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 3 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 3 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 3 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
@@ -24723,10 +24723,10 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0115s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0008s ]
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0162s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0007s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0008s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000395s ]
@@ -24751,10 +24751,10 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0076s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0005s ]
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0098s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 3 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 3 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 3 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
@@ -24802,11 +24802,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0064s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0005s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0119s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
@@ -25172,11 +25172,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0077s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0105s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
@@ -25224,11 +25224,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0073s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0092s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]

@@ -68,7 +68,7 @@
 									<?php if(($vo["is_hot"]) == "1"): ?>[ <font color="#FF0000">热</font>
 										]<?php endif; ?>
 								</td>
-								<td><?php echo (date('Y-m-d H:i:s',$vo["add_date"])); ?></td>
+								<td><?php echo (date('Y-m-d H:i:s',$vo["add_time"])); ?></td>
 								<td>
 									<?php if(is_array($forum)): $i = 0; $__LIST__ = $forum;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i; if(($vo2["id"]) == $vo["forum_id"]): echo ($vo2["title"]); endif; endforeach; endif; else: echo "" ;endif; ?>
 								</td>

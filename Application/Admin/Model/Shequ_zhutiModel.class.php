@@ -13,7 +13,7 @@ class forumModel extends Model {
 	  
     // 自动填充设置 
     protected $_auto     =     array(  
-        array('add_date','time',self::MODEL_BOTH,'function'), 
+        array('add_time','time',self::MODEL_BOTH,'function'), 
         ); 
 
 } 

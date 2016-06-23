@@ -115,7 +115,7 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001686s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0149s ]
-SQL: SELECT * FROM `news` WHERE ( cateid=0 ) LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE ( cate_id=0 ) LIMIT 0,10   [ RunTime:0.0004s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001748s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001917s ]

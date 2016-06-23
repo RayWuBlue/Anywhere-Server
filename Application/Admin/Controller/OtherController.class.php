@@ -27,7 +27,7 @@ class OtherController extends AdminController {
       $model->feedback_reply=$_POST['feedback_reply'];
       $model->reply_date=time();
       $model->save();
-      $this->redirect('other_admin_ly');
+      $this->redirect('feedback');
     }
 
 
@@ -86,7 +86,7 @@ class OtherController extends AdminController {
         $model->ad_height=$_POST['ad_height'];
         $model->text=$_POST['text'];
         $model->is_show=$_POST['is_show'];
-        $model->add_date=time();
+        $model->add_time=time();
       
       $model->save();
       $this->redirect('other_admin_ad');
@@ -114,7 +114,7 @@ class OtherController extends AdminController {
         $model->ad_height=$_POST['ad_height'];
         $model->text=$_POST['text'];
         $model->is_show=$_POST['is_show'];
-        $model->add_date=time();
+        $model->add_time=time();
         $model->add();
         $this->redirect('other_admin_ad');
     }   

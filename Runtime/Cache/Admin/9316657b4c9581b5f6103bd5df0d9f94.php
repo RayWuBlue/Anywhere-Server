@@ -52,7 +52,7 @@
               <td><?php echo ($vo["id"]); ?></td>
               <td height="25"><?php echo ($vo["ad_title"]); ?></td>
               <td><?php echo ($vo["ad_link"]); ?></td>
-              <td><?php echo (date('Y-m-d H:i:s',$vo["add_date"])); ?></td>
+              <td><?php echo (date('Y-m-d H:i:s',$vo["add_time"])); ?></td>
               <td>
                 <?php if(($vo["is_show"]) == "0"): ?>显示<?php endif; ?>
                 <?php if(($vo["is_show"]) == "1"): ?>不显示<?php endif; ?>

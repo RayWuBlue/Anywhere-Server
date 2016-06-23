@@ -97,6 +97,7 @@ class HuiyuanInfoController extends AdminController
 		  if(!empty($_POST['password'])){
 		  	$model->password=stripslashes($_POST['password']);
 		  }
+		  
 		  $model->sex=stripslashes($_POST['sex']);
 		  $model->age=stripslashes($_POST['age']);
 		  $model->birthday=stripslashes($_POST['birthday']);

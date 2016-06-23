@@ -7,11 +7,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001642s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001839s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0068s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0110s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
@@ -163,11 +163,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001431s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0083s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0101s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
@@ -264,11 +264,11 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001634s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
 NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
 SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0078s ]
-SQL: SELECT * FROM `cate` ORDER BY addtime desc  [ RunTime:0.0004s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0093s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 2 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 2 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
@@ -1858,4 +1858,1419 @@ INFO: [ view_filter ] --END-- [ RunTime:0.001359s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001609s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001787s ]
+
+[ 2016-06-02T13:09:41+08:00 ] ::1 /app/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+NOTIC: [8] Undefined index: admin C:\wamp\www\app\Application\Admin\Common\function.php 第 4 行.
+
+[ 2016-06-02T13:09:41+08:00 ] ::1 /app/admin.php?s=/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\app\Application\Admin\Controller\AuthController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001773s ]
+
+[ 2016-06-02T13:09:43+08:00 ] ::1 /app/admin.php?s=/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `member_user` [ RunTime:0.0273s ]
+SQL: SELECT * FROM `member_user` WHERE `username` = 'admin' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0024s ]
+
+[ 2016-06-02T13:09:43+08:00 ] ::1 /app/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `cate` ORDER BY add_time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 2 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 2 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001264s ]
+
+[ 2016-06-02T13:09:44+08:00 ] ::1 /app/admin.php?s=/banner/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001753s ]
+NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order' asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `map` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `map`  [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 6 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2016-06-02T13:09:45+08:00 ] ::1 /app/admin.php?s=/HuiyuanInfo/admin_member_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+SQL: SHOW COLUMNS FROM `member_admin` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `member_admin` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\ac618263a3681104ae7c210fd019f64b.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\ac618263a3681104ae7c210fd019f64b.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2016-06-02T13:09:46+08:00 ] ::1 /app/admin.php?s=/BBS/admin_bbs_forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `forum` ORDER BY "order" asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `forum_post` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 1 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `forum_comment` [ RunTime:0.0154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 36 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `member_admin` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 32 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `member_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 31 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 27 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 23 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 22 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 18 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 14 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 13 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 6 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 1 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 38 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 38 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 38 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 37 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 37 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 37 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 33 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 33 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 28 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 28 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 28 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 24 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 24 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 19 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 15 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 7 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 2 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 2 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 35 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 34 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 26 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 25 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 17 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 16 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 4 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT * FROM `member_admin` WHERE ( id=2 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 3 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 3 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 4 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 29 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 20 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 8 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 5 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 30 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 21 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 10 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 6 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 7 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 6 行.
+NOTIC: [8] Undefined variable: page C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2016-06-02T13:20:33+08:00 ] ::1 /app/admin.php?s=/BBS/admin_bbs_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: forum_id C:\wamp\www\app\Application\Admin\Controller\BBSController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `forum_post` [ RunTime:0.0112s ]
+NOTIC: [8] Undefined variable: map C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 33 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: map C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 44 行.
+SQL: SELECT * FROM `forum_post` ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `forum_comment` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 36 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `member_admin` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 35 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 34 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `member_user` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 32 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 31 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 30 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 29 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 27 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 26 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 25 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 23 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 22 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 21 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 20 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 18 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 17 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 16 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 14 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 13 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 8 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\1be72349c466eb63e1ba8339a96f0958.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\1be72349c466eb63e1ba8339a96f0958.php 第 6 行.
+NOTIC: [8] Undefined variable: page2 C:\wamp\www\app\Runtime\Cache\Admin\1be72349c466eb63e1ba8339a96f0958.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2016-06-02T13:20:35+08:00 ] ::1 /app/admin.php?s=/BBS/admin_bbs_forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `forum` ORDER BY "order" asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `forum_post` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 1 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `forum_comment` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 36 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `member_admin` [ RunTime:0.1228s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 32 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `member_user` [ RunTime:0.2086s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 31 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 27 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 23 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 22 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 18 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 14 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 13 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 6 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 1 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 38 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 38 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 38 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 37 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 37 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 33 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 33 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 28 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 28 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 28 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 24 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 24 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 19 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 15 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 7 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 2 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 2 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 35 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 34 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 26 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 25 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 17 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 16 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 4 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT * FROM `member_admin` WHERE ( id=2 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 3 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 3 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 4 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 29 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 20 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 8 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 5 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 30 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 21 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 10 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 6 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 7 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 6 行.
+NOTIC: [8] Undefined variable: page C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2016-06-02T13:21:21+08:00 ] ::1 /app/admin.php?s=/BBS/admin_bbs_forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0612s ]
+SQL: SELECT * FROM `forum` ORDER BY "order" asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `forum_post` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 1 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `forum_comment` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 36 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `member_admin` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 32 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `member_user` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 31 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 27 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 23 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 22 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 18 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 14 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 13 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 6 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 1 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 38 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 38 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 38 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 37 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 37 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 33 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 33 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 28 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 28 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 28 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 24 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 24 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 19 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 15 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 7 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 2 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 2 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 35 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 34 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 26 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 25 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 17 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 16 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 4 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT * FROM `member_admin` WHERE ( id=2 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 3 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 3 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 4 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 29 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 20 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 8 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 5 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 30 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 21 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 10 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 6 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 7 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 6 行.
+NOTIC: [8] Undefined variable: page C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2016-06-02T13:21:31+08:00 ] ::1 /app/admin.php?s=/HuiyuanInfo/admin_member_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+SQL: SHOW COLUMNS FROM `member_admin` [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `member_admin` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\ac618263a3681104ae7c210fd019f64b.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\ac618263a3681104ae7c210fd019f64b.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2016-06-02T13:21:31+08:00 ] ::1 /app/admin.php?s=/banner/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order' asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `map` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `map`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 6 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2016-06-02T13:22:26+08:00 ] ::1 /app/admin.php?s=/Banner/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.3376s ]
+SQL: INSERT INTO `banner` (`title`,`action`,`image`,`order`) VALUES ('','0','','0') [ RunTime:0.5965s ]
+
+[ 2016-06-02T13:22:27+08:00 ] ::1 /app/admin.php?s=/Banner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.1637s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order' asc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `map` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `map`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 6 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 0 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 0 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 0 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001694s ]
+
+[ 2016-06-02T13:22:31+08:00 ] ::1 /app/admin.php?s=/Banner/del/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0158s ]
+SQL: DELETE FROM `banner` WHERE ( id=2 ) [ RunTime:0.3928s ]
+
+[ 2016-06-02T13:22:31+08:00 ] ::1 /app/admin.php?s=/Banner/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+NOTIC: [8] Undefined index: sub_action C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order' asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `map` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `map`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 6 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+NOTIC: [8] Undefined variable: 3 C:\wamp\www\app\Runtime\Cache\Admin\96f1079dc513765702ec3bb82f6b6e84.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001404s ]
+
+[ 2016-06-02T13:22:36+08:00 ] ::1 /app/admin.php?s=/HuiyuanInfo/admin_member_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `member_admin` [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `member_admin` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `member_admin` ORDER BY id desc LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\ac618263a3681104ae7c210fd019f64b.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\ac618263a3681104ae7c210fd019f64b.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2016-06-02T13:22:37+08:00 ] ::1 /app/admin.php?s=/BBS/admin_bbs_forum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `forum` ORDER BY "order" asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `forum_post` [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 1 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `forum_comment` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 36 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 36 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `member_admin` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 32 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 32 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `member_user` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 31 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 31 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 27 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 27 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 23 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 22 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 18 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 18 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 14 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 13 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=4 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 6 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_admin` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 1 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=1 )  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 38 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 38 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 38 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 37 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 37 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 33 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 33 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 33 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 28 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 28 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 28 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 24 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 24 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 24 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 19 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 15 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 7 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 2 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 2 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 35 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 35 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 34 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 26 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 26 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 25 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 17 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 16 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 4 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT * FROM `member_admin` WHERE ( id=2 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 3 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 3 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 4 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 29 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 20 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 20 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 8 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 5 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 30 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 21 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 21 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `forum_comment` WHERE `info_id` = 10 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 109 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_comment` WHERE `info_id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `member_user` WHERE ( id=0 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: person C:\wamp\www\app\Application\Common\Api\PersonApi.class.php 第 43 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 6 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `forum_post` WHERE `forum_id` = 7 ORDER BY is_top desc,id desc LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: list C:\wamp\www\app\Application\Common\Api\BBSApi.class.php 第 71 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `forum_post` WHERE `forum_id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined variable: website_title C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 5 行.
+NOTIC: [8] Undefined variable: keywords C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 6 行.
+NOTIC: [8] Undefined variable: page C:\wamp\www\app\Runtime\Cache\Admin\b7e2b12616b8334baba1fac04fedbe8d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
 

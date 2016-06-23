@@ -82,7 +82,7 @@
          <div class="dialog-centent">
              <form method="post" action="__URL__/edit_cate">
                  <span>分类名：</span>
-                 <input type="hidden" name="id" value="{$cateid}">
+                 <input type="hidden" name="id" value="{$cate_id}">
                  <input type="text" name="name" value="{$catename}">&nbsp;&nbsp;
                  <input type="submit" value="确定">
              </form>
@@ -102,7 +102,7 @@
          <div class="dialog-centent">
              <form method="post" action="__URL__/del_cate">
                  <h4>是否删除<font color="red">{$catename}</font>分类？<br/>该分类下的所有新闻将被删除!!</h4>
-                 <input type="hidden" name="id" value="{$cateid}">
+                 <input type="hidden" name="id" value="{$cate_id}">
                  <input type="submit" value="确定">
              </form>
          </div>
@@ -116,10 +116,10 @@
             </div>
             <div class="panel-control">
                 <form id="cateform" action="__URL__/index" method="post">
-                    <select id="cateid" name="cateid" style="width: 300px;height: 30px;">
+                    <select id="cate_id" name="cate_id" style="width: 300px;height: 30px;">
                     
                         <volist name="cates" id="cate">
-                            <if condition="($cateid eq $cate['id'])">
+                            <if condition="($cate_id eq $cate['id'])">
                                 <option selected="selected" value="{$cate.id}">{$cate.name}</option>
                                 <else />
                                 <option value="{$cate.id}">{$cate.name}</option>
@@ -153,9 +153,9 @@
                             <td><input type="checkbox"></td>
                             <td>{$item.id}</td>
                             <td>{$item.title}</td>
-                            <td>{$item.addtime|strtotime|date='Y-m-d',###}</td>
+                            <td>{$item.add_time|strtotime|date='Y-m-d',###}</td>
                             <td>
-                                <span><a href="__APP__/reco/add/wid/{$item.id}">编辑</a></span>
+                                <span><a href="__URL__/edit/{$item.id}">编辑</a></span>
                                 <span>
                                 <a href="javascript:void(0);" onclick="del('{$item.id}');">删除</a>
                                 </span>
@@ -174,7 +174,7 @@
 <block name="js">
     <script type="text/javascript">
     $(function() {
-        $('#cateid').change(function(e) {
+        $('#cate_id').change(function(e) {
             $('#cateform').submit();
         });
     });

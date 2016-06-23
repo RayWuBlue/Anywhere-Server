@@ -1,0 +1,949 @@
+[ 2016-06-05T01:06:14+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002549s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0360s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001654s ]
+
+[ 2016-06-05T01:06:35+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002155s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001708s ]
+
+[ 2016-06-05T01:06:35+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002145s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001498s ]
+
+[ 2016-06-05T01:11:09+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001541s ]
+
+[ 2016-06-05T01:11:09+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001471s ]
+
+[ 2016-06-05T01:13:12+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002466s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002255s ]
+
+[ 2016-06-05T01:13:12+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002397s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002247s ]
+
+[ 2016-06-05T01:13:30+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001757s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001775s ]
+
+[ 2016-06-05T01:13:30+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001822s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001623s ]
+
+[ 2016-06-05T01:16:43+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2016-06-05T01:20:41+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001569s ]
+
+[ 2016-06-05T01:20:41+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001612s ]
+
+[ 2016-06-05T01:27:51+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002246s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
+
+[ 2016-06-05T01:27:51+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002703s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001583s ]
+
+[ 2016-06-05T11:37:43+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.2645s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003071s ]
+
+[ 2016-06-05T11:37:43+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001671s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.2663s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004221s ]
+
+[ 2016-06-05T11:41:04+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005679s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002811s ]
+
+[ 2016-06-05T11:41:04+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004887s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003268s ]
+
+[ 2016-06-05T11:41:31+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2016-06-05T11:41:31+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001493s ]
+
+[ 2016-06-05T12:07:38+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001552s ]
+
+[ 2016-06-05T12:12:29+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2016-06-05T12:12:30+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2016-06-05T12:12:31+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2016-06-05T12:12:31+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2016-06-05T12:12:34+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2016-06-05T12:13:18+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2016-06-05T12:13:19+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001369s ]
+
+[ 2016-06-05T12:13:19+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001344s ]
+
+[ 2016-06-05T12:14:00+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001486s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001569s ]
+
+[ 2016-06-05T12:14:26+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001342s ]
+
+[ 2016-06-05T12:16:06+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002376s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001707s ]
+
+[ 2016-06-05T12:16:07+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001360s ]
+
+[ 2016-06-05T12:18:02+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001496s ]
+
+[ 2016-06-05T12:18:02+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2016-06-05T12:19:10+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001519s ]
+
+[ 2016-06-05T12:19:46+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001281s ]
+
+[ 2016-06-05T12:19:47+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001320s ]
+
+[ 2016-06-05T12:21:59+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001515s ]
+
+[ 2016-06-05T12:22:17+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001563s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001542s ]
+
+[ 2016-06-05T12:23:03+08:00 ] ::1 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2016-06-05T12:23:57+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.1843s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002609s ]
+
+[ 2016-06-05T12:24:05+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001582s ]
+
+[ 2016-06-05T12:24:05+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001632s ]
+
+[ 2016-06-05T12:25:32+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001621s ]
+
+[ 2016-06-05T12:26:04+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001333s ]
+
+[ 2016-06-05T12:26:04+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002263s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002137s ]
+
+[ 2016-06-05T12:27:12+08:00 ] 192.168.0.100 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002279s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002015s ]
+
+[ 2016-06-05T12:27:12+08:00 ] 192.168.0.100 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002455s ]
+

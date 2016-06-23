@@ -51,8 +51,8 @@
                 <td ><?php echo ($vo["username"]); ?></td>
                 <td ><?php echo ($vo["sex"]); ?></td>
                 <td ><?php echo ($vo["age"]); ?></td>
-                <td ><?php echo (date('Y-m-d H:i:s',$vo["add_date"])); ?></td>
-                <td ><?php echo (date('Y-m-d H:i:s',$vo["login_date"])); ?></td>
+                <td ><?php echo (date('Y-m-d H:i:s',$vo["add_time"])); ?></td>
+                <td ><?php echo (date('Y-m-d H:i:s',$vo["login_time"])); ?></td>
                 <td ><?php echo ($vo["mobilephone"]); ?></td>
                 <td >
                   <input type="button" name="Submit3" value="修改"

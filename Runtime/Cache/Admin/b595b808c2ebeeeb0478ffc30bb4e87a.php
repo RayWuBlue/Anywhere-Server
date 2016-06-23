@@ -105,7 +105,7 @@
          <div class="dialog-centent">
              <form method="post" action="/app/admin.php?s=/Index/edit_cate">
                  <span>分类名：</span>
-                 <input type="hidden" name="id" value="<?php echo ($cateid); ?>">
+                 <input type="hidden" name="id" value="<?php echo ($cate_id); ?>">
                  <input type="text" name="name" value="<?php echo ($catename); ?>">&nbsp;&nbsp;
                  <input type="submit" value="确定">
              </form>
@@ -125,7 +125,7 @@
          <div class="dialog-centent">
              <form method="post" action="/app/admin.php?s=/Index/del_cate">
                  <h4>是否删除<font color="red"><?php echo ($catename); ?></font>分类？<br/>该分类下的所有新闻将被删除!!</h4>
-                 <input type="hidden" name="id" value="<?php echo ($cateid); ?>">
+                 <input type="hidden" name="id" value="<?php echo ($cate_id); ?>">
                  <input type="submit" value="确定">
              </form>
          </div>
@@ -139,9 +139,9 @@
             </div>
             <div class="panel-control">
                 <form id="cateform" action="/app/admin.php?s=/Index/index" method="post">
-                    <select id="cateid" name="cateid" style="width: 300px;height: 30px;">
+                    <select id="cate_id" name="cate_id" style="width: 300px;height: 30px;">
                     
-                        <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i; if(($cateid == $cate['id'])): ?><option selected="selected" value="<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></option>
+                        <?php if(is_array($cates)): $i = 0; $__LIST__ = $cates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i; if(($cate_id == $cate['id'])): ?><option selected="selected" value="<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></option>
                                 <?php else: ?>
                                 <option value="<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></option><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                     </select>
@@ -171,9 +171,9 @@
                             <td><input type="checkbox"></td>
                             <td><?php echo ($item["id"]); ?></td>
                             <td><?php echo ($item["title"]); ?></td>
-                            <td><?php echo (date('Y-m-d',strtotime($item["addtime"]))); ?></td>
+                            <td><?php echo (date('Y-m-d',strtotime($item["add_time"]))); ?></td>
                             <td>
-                                <span><a href="/app/admin.php?s=/reco/add/wid/<?php echo ($item["id"]); ?>">编辑</a></span>
+                                <span><a href="/app/admin.php?s=/Index/edit/<?php echo ($item["id"]); ?>">编辑</a></span>
                                 <span>
                                 <a href="javascript:void(0);" onclick="del('<?php echo ($item["id"]); ?>');">删除</a>
                                 </span>
@@ -196,7 +196,7 @@
     
     <script type="text/javascript">
     $(function() {
-        $('#cateid').change(function(e) {
+        $('#cate_id').change(function(e) {
             $('#cateform').submit();
         });
     });

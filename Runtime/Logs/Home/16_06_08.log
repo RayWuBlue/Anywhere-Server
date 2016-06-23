@@ -1,0 +1,68 @@
+[ 2016-06-08T15:49:58+08:00 ] 10.160.1.175 /app/index.php/api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003090s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.2253s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002995s ]
+
+[ 2016-06-08T15:50:16+08:00 ] 10.160.1.175 /app/index.php/api/get_banners
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+SQL: SHOW COLUMNS FROM `banner` [ RunTime:0.0856s ]
+SQL: SELECT * FROM `banner` ORDER BY 'order'  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2016-06-08T15:50:16+08:00 ] 10.160.1.175 /app/index.php/api/get_news_list/category/42/page1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002099s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `news` LIMIT 0,10   [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 32 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 33 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\app\Application\Home\Controller\ApiController.class.php 第 34 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002251s ]
+
+[ 2016-06-08T16:10:11+08:00 ] 10.160.1.175 /app/index.php/api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001491s ]
+
+[ 2016-06-08T16:11:45+08:00 ] 10.160.1.175 /app/index.php/api/get_forums
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `forum` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `forum`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+

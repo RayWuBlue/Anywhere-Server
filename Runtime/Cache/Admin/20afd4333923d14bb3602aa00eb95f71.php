@@ -95,7 +95,7 @@
                 <input type="radio" name="auth" value="1" <?php if(($vo["auth"]) != "0"): ?>checked<?php endif; ?>
               />&nbsp; 一般
             </td>
-            <td><?php echo (date('Y-m-d',$vo["add_date"])); ?></td>
+            <td><?php echo (date('Y-m-d',$vo["add_time"])); ?></td>
             <td>
               <input type="Submit" name="Submit3" value="修改"  class="btn"/>
               <input type="button" name="Submit" value="删除" class="btn" 

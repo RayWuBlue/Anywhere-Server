@@ -92,9 +92,9 @@
       </tr>
       <tr>
         <td height="28"  >注册时间：</td>
-        <td ><?php echo (date('Y-m-d H:i:s',$member_admin["add_date"])); ?></td>
+        <td ><?php echo (date('Y-m-d H:i:s',$member_admin["add_time"])); ?></td>
         <td  >最后登录时间:</td>
-        <td ><?php echo (date('Y-m-d H:i:s',$member_admin["login_date"])); ?></td>
+        <td ><?php echo (date('Y-m-d H:i:s',$member_admin["login_time"])); ?></td>
       </tr>
       <tr >
         <td height="25" >&nbsp;</td>

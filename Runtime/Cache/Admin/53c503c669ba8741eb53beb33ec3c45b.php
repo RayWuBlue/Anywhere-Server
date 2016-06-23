@@ -54,7 +54,7 @@
                               <?php if(($person["user_type"]) == "2"): ?><a href="/app/admin.php?s=/Admin/HuiyuanInfo/update_member_user/id/<?php echo ($person["id"]); ?>" style="color:#0000ff"><?php echo ($person["name"]); ?></a><?php endif; endforeach; endif; else: echo "" ;endif; endif; ?>
                         </td>
                         <td width="5%" class="td">时间：</td>
-                        <td width="34%" class="td"><?php echo (date('Y-m-d H:i:s',$vo["add_date"])); ?></td>
+                        <td width="34%" class="td"><?php echo (date('Y-m-d H:i:s',$vo["add_time"])); ?></td>
                         <td width="20%" class="td" align="center">
                           <input type="button" name="Submit3" value="删除"  class="btn"
           onclick="javascript:if(confirm('确定删除？删除后不可恢复!')){

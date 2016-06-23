@@ -20,7 +20,7 @@
 							<td width="12%" height="30" align="right">留言标题：</td>
 							<td width="28%" align="left">{$vo.title}</td>
 							<td width="10%" height="30" align="right">留言时间：</td>
-							<td width="19%" align="left">{$vo.add_date|date='Y-m-d H:i:s',###}</td>
+							<td width="19%" align="left">{$vo.add_time|date='Y-m-d H:i:s',###}</td>
 							<td width="11%" height="30" align="right">留言者：</td>
 							<td width="20%" align="left">{$vo.username}</td>
 						</tr>
@@ -47,7 +47,7 @@
 								  }
 							  </script>
 								<div id="div{$k}" style="display:none">
-									<form action="__APP__/Admin/index/up_ly" method="post" onsubmit="return submit({$k});">
+									<form action="__URL__/update_feedback" method="post" onsubmit="return submit({$k});">
 										<input type="hidden" name="id" value="{$vo.id}" />
 										<textarea name="feedback_reply" rows="3" cols="30"></textarea>
 										<br />

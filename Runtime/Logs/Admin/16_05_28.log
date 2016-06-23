@@ -194,10 +194,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002082s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `wallpaper` [ RunTime:0.0277s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0005s ]
-SQL: SELECT * FROM `wallpaper` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wallpaper` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
@@ -245,10 +245,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001811s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `wallpaper` [ RunTime:0.3988s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `wallpaper` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wallpaper` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
@@ -3233,10 +3233,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `wallpaper` [ RunTime:0.0136s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `wallpaper` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wallpaper` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
@@ -3281,10 +3281,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `wallpaper` [ RunTime:0.0164s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `wallpaper` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wallpaper` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0005s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
@@ -3307,10 +3307,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `wallpaper` [ RunTime:0.0104s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `wallpaper` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wallpaper` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
@@ -3333,10 +3333,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001593s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `wallpaper` [ RunTime:0.0103s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `wallpaper` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wallpaper` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
@@ -3359,10 +3359,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `wallpaper` [ RunTime:0.0091s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `wallpaper` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wallpaper` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
@@ -3385,10 +3385,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001412s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `wallpaper` [ RunTime:0.0096s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0003s ]
-SQL: SELECT * FROM `wallpaper` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wallpaper` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wallpaper` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
@@ -4221,10 +4221,10 @@ INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0125s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0004s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0004s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
@@ -4668,10 +4668,10 @@ INFO: [ app_begin ] --END-- [ RunTime:0.002351s ]
 SQL: SHOW COLUMNS FROM `map` [ RunTime:0.0081s ]
 SQL: SELECT * FROM `map` ORDER BY 'id' desc  [ RunTime:0.0004s ]
 NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\app\Application\Admin\Controller\AdminController.class.php 第 32 行.
-NOTIC: [8] Undefined index: cateid C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
+NOTIC: [8] Undefined index: cate_id C:\wamp\www\app\Application\Admin\Controller\IndexController.class.php 第 12 行.
 SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0100s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cateid` = 1 LIMIT 1   [ RunTime:0.0005s ]
-SQL: SELECT * FROM `news` WHERE `cateid` = 1 ORDER BY addtime desc LIMIT 0,25   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE `cate_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `news` WHERE `cate_id` = 1 ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0008s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]

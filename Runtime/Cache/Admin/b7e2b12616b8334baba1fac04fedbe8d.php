@@ -65,7 +65,7 @@
                   <input type="text" name="title" size="30" value="<?php echo ($vo["title"]); ?>" />
                 </td>
                 <td><?php echo ($vo["counts"]); ?></td>
-                <td><?php echo (date('Y-m-d H:i:s',$vo["add_date"])); ?></td>
+                <td><?php echo (date('Y-m-d H:i:s',$vo["add_time"])); ?></td>
                 <td>
                   <input type="text" name="order" size="5" value="<?php echo ($vo["order"]); ?>" />
                 </td>
